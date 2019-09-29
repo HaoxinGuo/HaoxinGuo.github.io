@@ -6,7 +6,7 @@ toc: true
 mathjax: true
 date: 2019-09-29 18:45:57
 password:
-summary: Ò³ÃæÐÅÏ¢ÌáÈ¡ ÅÀ³æ
+summary: é¡µé¢ä¿¡æ¯æå– çˆ¬è™«
 tags:
 - python
 categories:
@@ -14,26 +14,26 @@ categories:
 ---
 
 
-ÒÔ[MATLABÖÐÎÄÂÛÌ³--MATLAB »ù´¡ÌÖÂÛ ](http://www.ilovematlab.cn/forum-6-1.html)ÎªÀý£¬½øÐÐÒ³ÃæÐÅÏ¢ÌáÈ¡£¬Ö÷ÒªÌáÈ¡Ò³ÃæÄÚÎÊÌâ£¬ÎÊÌâµÄÔÄ¶ÁÁ¿ÒÔ¼°ÎÊÌâÁ´½Ó£¬»ã×ÜÔÄ¶ÁÁ¿´óÓÚ100000µÄÍ¼¡£
+ä»¥[MATLABä¸­æ–‡è®ºå›--MATLAB åŸºç¡€è®¨è®º ](http://www.ilovematlab.cn/forum-6-1.html)ä¸ºä¾‹ï¼Œè¿›è¡Œé¡µé¢ä¿¡æ¯æå–ï¼Œä¸»è¦æå–é¡µé¢å†…é—®é¢˜ï¼Œé—®é¢˜çš„é˜…è¯»é‡ä»¥åŠé—®é¢˜é“¾æŽ¥ï¼Œæ±‡æ€»é˜…è¯»é‡å¤§äºŽ100000çš„å›¾ã€‚
 
 
 
 
 
-# ÅÀÈ¡ÍøÒ³
+# çˆ¬å–ç½‘é¡µ
 
-ÒÔ[MATLABÖÐÎÄÂÛÌ³--MATLAB »ù´¡ÌÖÂÛ ](http://www.ilovematlab.cn/forum-6-1.html)ÎªÀý£¬½øÐÐÒ³ÃæÐÅÏ¢ÌáÈ¡£¬Ö÷ÒªÌáÈ¡Ò³ÃæÄÚÎÊÌâ£¬ÎÊÌâµÄÔÄ¶ÁÁ¿ÒÔ¼°ÎÊÌâÁ´½Ó£¬»ã×ÜÔÄ¶ÁÁ¿´óÓÚ100000µÄÍ¼¡£
-½âÎöÍøÒ³ÐÅÏ¢£¬Ö÷ÒªµÄÌáÈ¡´úÂëÎª£º
+ä»¥[MATLABä¸­æ–‡è®ºå›--MATLAB åŸºç¡€è®¨è®º ](http://www.ilovematlab.cn/forum-6-1.html)ä¸ºä¾‹ï¼Œè¿›è¡Œé¡µé¢ä¿¡æ¯æå–ï¼Œä¸»è¦æå–é¡µé¢å†…é—®é¢˜ï¼Œé—®é¢˜çš„é˜…è¯»é‡ä»¥åŠé—®é¢˜é“¾æŽ¥ï¼Œæ±‡æ€»é˜…è¯»é‡å¤§äºŽ100000çš„å›¾ã€‚
+è§£æžç½‘é¡µä¿¡æ¯ï¼Œä¸»è¦çš„æå–ä»£ç ä¸ºï¼š
 ~~~ html
-<a href="thread-568443-1-1.html" onclick="atarget(this)" class="s xst">Ð¡°×ÇóÎÊº¯ÊýÇóµ¼ÎÊÌâ</a>
+<a href="thread-568443-1-1.html" onclick="atarget(this)" class="s xst">å°ç™½æ±‚é—®å‡½æ•°æ±‚å¯¼é—®é¢˜</a>
 ~~~
 
-# ¹¤¾ß
+# å·¥å…·
 ## python
-ÀûÓÃPythonÓïÑÔ½øÐÐ±à³ÌÅÀÈ¡ÍøÒ³µÄÄÚÈÝ¡£
+åˆ©ç”¨Pythonè¯­è¨€è¿›è¡Œç¼–ç¨‹çˆ¬å–ç½‘é¡µçš„å†…å®¹ã€‚
 ## beautifulsoup
-ÓÃ[beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html)°ü½øÐÐ½âÎöÍøÒ³¡£
-# ÍêÕû´úÂë
+ç”¨[beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html)åŒ…è¿›è¡Œè§£æžç½‘é¡µã€‚
+# å®Œæ•´ä»£ç 
 ```python
 // An highlighted block
 # -*- coding: utf-8 -*-
@@ -46,7 +46,7 @@ import requests
 import pygal
 from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
 
-# µÃµ½Ã¿Ò³µÄÊý¾Ý urls ÍøÒ³Ô´
+# å¾—åˆ°æ¯é¡µçš„æ•°æ® urls ç½‘é¡µæº
 def get_titles(urls,data = None):
     print(urls)
     try:
@@ -68,7 +68,7 @@ def get_titles(urls,data = None):
         return "Someting is Wrong!
         
 
-# µÃµ½»æÍ¼µÄÊý¾Ý Title ±êÌâ Nums ÊýÁ¿ link Á´½Ó            
+# å¾—åˆ°ç»˜å›¾çš„æ•°æ® Title æ ‡é¢˜ Nums æ•°é‡ link é“¾æŽ¥            
 def getplotdata(Title,Nums,link):
     for i in range(0,len(Title)):
         plot_dirt={
@@ -79,10 +79,10 @@ def getplotdata(Title,Nums,link):
         plot_dirts.append(plot_dirt)
     return plot_dirts
 
-# »æÍ¼²Ù×÷¶¨Òå Plot_dirt »æÍ¼Êý¾Ý×Öµä Title ºá×ø±ê±êÌâ
+# ç»˜å›¾æ“ä½œå®šä¹‰ Plot_dirt ç»˜å›¾æ•°æ®å­—å…¸ Title æ¨ªåæ ‡æ ‡é¢˜
 def Plot_dirt(name,Plot_dirt,Title):
     my_style = LS('#333366', base_style=LCS)
-# ¶¨ÒåÀàÐÍ
+# å®šä¹‰ç±»åž‹
     my_config = pygal.Config()
     my_config.x_label_rotation = 45
     my_config.show_legend = False
@@ -99,7 +99,7 @@ def Plot_dirt(name,Plot_dirt,Title):
     chart1.render_to_file(name) 
 
 
-# Êä³öÎÄ¼þ ¶¨ÒåÑùÊ½ name ÎÄ¼þÃû title ±êÌâ num ÔÄ¶ÁÁ¿ link Á´½Ó 
+# è¾“å‡ºæ–‡ä»¶ å®šä¹‰æ ·å¼ name æ–‡ä»¶å title æ ‡é¢˜ num é˜…è¯»é‡ link é“¾æŽ¥ 
 def Output_data(name,title,num,link,temp):
     filename = name
     with open(filename,'w',encoding='utf-8') as file_object:
@@ -116,13 +116,13 @@ MaxReadNum=200000
 urls = ['http://www.ilovematlab.cn/forum-6-{}.html'.format(str(i)) for i in range(1,1001)]
 for url in urls:
     get_titles(url)
-# Êä³öËùÓÐÍøÒ³µÄÊý¾Ý ±êÌâ ÔÄ¶ÁÁ¿ Á´½Ó   
+# è¾“å‡ºæ‰€æœ‰ç½‘é¡µçš„æ•°æ® æ ‡é¢˜ é˜…è¯»é‡ é“¾æŽ¥   
 Output_data('outputall.txt',Title,Nums,link,1)
 
-# ¶ÔµÃµ½µÄ»æÍ¼Êý¾Ý½øÐÐ×Öµä´¦Àí 
+# å¯¹å¾—åˆ°çš„ç»˜å›¾æ•°æ®è¿›è¡Œå­—å…¸å¤„ç† 
 getplotdata(Title,Nums,link)
 
-# ´¦ÀíµÃµ½µÄÊý¾Ý£¬½«´óÓÚMaxReadNumµÄÊý¾ÝÌáÈ¡³öÀ´
+# å¤„ç†å¾—åˆ°çš„æ•°æ®ï¼Œå°†å¤§äºŽMaxReadNumçš„æ•°æ®æå–å‡ºæ¥
 for i in range(0,len(plot_dirts)):
     if plot_dirts[i]['value'] > MaxReadNum:
         plot_All.append(plot_dirts[i])
@@ -133,9 +133,9 @@ for i in range(0,len(plot_dirts)):
 name1='1.svg'        
 Plot_dirt(name1,plot_All,plot_title)
 
-# Êä³ö»æÍ¼Êý¾ÝµÄÎÄ±¾ÎÄ¼þ
+# è¾“å‡ºç»˜å›¾æ•°æ®çš„æ–‡æœ¬æ–‡ä»¶
 Output_data('outputpart.txt',plot_title,plot_numer,plot_link,2
 ```
-# ½á¹û
+# ç»“æžœ
 <div align="center">
 <img src="https://img-blog.csdnimg.cn/20190410122225883.png" height="500" width="1000" >
