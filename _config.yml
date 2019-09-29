@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url:  /
+url:  http://guohaoxin.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -142,5 +142,5 @@ live2d:
 baidu_url_submit:
   count: 100
   host: guohaoxin.top
-  token: 
+  token: /
   path: baidu_urls.txt
