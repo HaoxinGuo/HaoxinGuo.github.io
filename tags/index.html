@@ -316,20 +316,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="tag-chips">
                 
                 
-                <a href="/tags/随笔/" title="随笔: 2">
+                <a href="/tags/读书笔记/" title="读书笔记: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="随笔" style="background-color: #F9EBEA;">随笔
-                        <span class="tag-length">2</span>
+                            data-tagname="读书笔记" style="background-color: #F9EBEA;">读书笔记
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/读书笔记/" title="读书笔记: 1">
+                <a href="/tags/随笔/" title="随笔: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="读书笔记" style="background-color: #F5EEF8;">读书笔记
-                        <span class="tag-length">1</span>
+                            data-tagname="随笔" style="background-color: #F5EEF8;">随笔
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -357,7 +357,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"随笔","weight":2,"link":"/tags/随笔/"},{"text":"读书笔记","weight":1,"link":"/tags/读书笔记/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"读书笔记","weight":1,"link":"/tags/读书笔记/"},{"text":"随笔","weight":2,"link":"/tags/随笔/"}], {
         autoResize: true
     });
 </script>
@@ -478,7 +478,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2019, 09, 29, 16, 45, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2019, 9, 29, 16, 45, 12); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);

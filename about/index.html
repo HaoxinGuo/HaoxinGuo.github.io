@@ -553,7 +553,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"随笔","value":2},{"name":"读书笔记","value":1}],
+                data: [{"name":"读书笔记","value":1},{"name":"随笔","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -780,14 +780,14 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/随笔/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">随笔</span>
+            <a href="/tags/读书笔记/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">读书笔记</span>
             </a>
             
             
             
-            <a href="/tags/读书笔记/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">读书笔记</span>
+            <a href="/tags/随笔/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">随笔</span>
             </a>
             
             
@@ -938,7 +938,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2019, 09, 29, 16, 45, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2019, 9, 29, 16, 45, 12); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
