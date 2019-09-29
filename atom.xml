@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Haoxin的博客</title>
+  
+  <subtitle>ghxtju</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://guohaoxin.top/"/>
+  <updated>2019-09-29T07:20:58.829Z</updated>
+  <id>http://guohaoxin.top/</id>
+  
+  <author>
+    <name>Haoxin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>幕后产品读书笔记</title>
+    <link href="http://guohaoxin.top/2019/09/29/2019-first-post/"/>
+    <id>http://guohaoxin.top/2019/09/29/2019-first-post/</id>
+    <published>2019-09-29T07:18:41.000Z</published>
+    <updated>2019-09-29T07:20:58.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;幕后产品&quot;&gt;&lt;a href=&quot;#幕后产品&quot; class=&quot;headerlink&quot; title=&quot;幕后产品&quot;&gt;&lt;/a&gt;幕后产品&lt;/h1&gt;&lt;h2 id=&quot;执行层面&quot;&gt;&lt;a href=&quot;#执行层面&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://guohaoxin.top/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书笔记" scheme="http://guohaoxin.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-conclusion</title>
+    <link href="http://guohaoxin.top/2019/09/29/2018-conclusion/"/>
+    <id>http://guohaoxin.top/2019/09/29/2018-conclusion/</id>
+    <published>2019-09-29T05:53:42.000Z</published>
+    <updated>2019-09-29T05:59:12.251Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://guohaoxin.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://guohaoxin.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二零一七年终总结</title>
+    <link href="http://guohaoxin.top/2018/01/22/2017-conclusion/"/>
+    <id>http://guohaoxin.top/2018/01/22/2017-conclusion/</id>
+    <published>2018-01-22T04:32:09.000Z</published>
+    <updated>2019-09-28T13:34:03.099Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://guohaoxin.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://guohaoxin.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
