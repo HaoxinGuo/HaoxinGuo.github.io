@@ -242,9 +242,9 @@ gitalk:
   owner: 'HaoxinGuo'
   repo: 'HaoxinGuo.github.io'
   oauth:
-    clientId: '65ce65932fe225955e6f'
-    clientSecret: 'ed2d263febf51e9bd327a42e399545528e1cdfd4'
-  admin: ['HaoxinGuo']
+    clientId: '8cb4c8cf30524635c4de'
+    clientSecret: '0168adf947cf0f3d897310475b33d648fb76abc5'
+  admin: 'HaoxinGuo'
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活

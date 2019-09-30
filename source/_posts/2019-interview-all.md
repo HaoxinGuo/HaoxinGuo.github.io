@@ -1,6 +1,6 @@
 ---
 title: 产品经理面试问题集锦
-top: true
+top: false
 cover: false
 toc: true
 mathjax: true
