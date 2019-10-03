@@ -10,7 +10,7 @@ summary: 整理的PM面试问题集锦。
 tags:
 - 面试 PM
 categories:
-- 面试 PM
+- 面试
 ---
 
 
