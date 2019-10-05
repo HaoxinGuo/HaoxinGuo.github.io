@@ -1,5 +1,5 @@
 ---
-title: 2019-how to fix connection rest by port
+title: how to fix connection rest by port-GIt
 top: false
 cover: false
 toc: true
@@ -8,25 +8,27 @@ date: 2019-10-03 16:54:05
 password:
 summary:
 tags:
+- Git
 categories:
+- Git
 ---
-## ÎÊÌâ
-½ñÌì¾ÍÔÚ×¼±¸¸üĞÂÎÒµÄ²©¿ÍµÄÊ±ºò·¢ÏÖÍ»È»gitÁ¬²»ÉÏÎÒµÄrepositories
-¾­¹ı²âÊÔ·¢ÏÖConnection resetµÄÎÊÌâ£º
+## é—®é¢˜
+ä»Šå¤©å°±åœ¨å‡†å¤‡æ›´æ–°æˆ‘çš„åšå®¢çš„æ—¶å€™å‘ç°çªç„¶gitè¿ä¸ä¸Šæˆ‘çš„repositories
+ç»è¿‡æµ‹è¯•å‘ç°Connection resetçš„é—®é¢˜ï¼š
 ```
 $ ssh -T git@github.com
 Connection reset by 52.74.223.119 port 22
 ```
-Ò»Ö±ÕâÑùÌáÊ¾±¨´í£¬¾­¹ı°Ù¶È¼¸·¬²éÕÒ£¬ÒÔÎªÊÇssh³öÎÊÌâÁË£¬É¾µôÔ­À´µÄssh,È»ºóÖØĞÂÉú³É²¢addµ½githubÉÏ£¬È»¶øÊÂÊµ²¢Ã»ÓĞÕâÃ´¼òµ¥
+ä¸€ç›´è¿™æ ·æç¤ºæŠ¥é”™ï¼Œç»è¿‡ç™¾åº¦å‡ ç•ªæŸ¥æ‰¾ï¼Œä»¥ä¸ºæ˜¯sshå‡ºé—®é¢˜äº†ï¼Œåˆ æ‰åŸæ¥çš„ssh,ç„¶åé‡æ–°ç”Ÿæˆå¹¶addåˆ°githubä¸Šï¼Œç„¶è€Œäº‹å®å¹¶æ²¡æœ‰è¿™ä¹ˆç®€å•
 $ ssh -T git@github.com
 Connection reset by 52.74.223.119 port 22
 ping github.com 
-Õı³£
+æ­£å¸¸
 ping github.global.ssl.fastly.net
-ÎŞ·¨Á¬½Ó
-Ô­Òò£º
-DNSÎŞ·¨½âÎö
-½â¾ö·½°¸£º
-´ò¿ªhosts(windows/system32/drivers/etc/hots)add:
+æ— æ³•è¿æ¥
+åŸå› ï¼š
+DNSæ— æ³•è§£æ
+è§£å†³æ–¹æ¡ˆï¼š
+æ‰“å¼€hosts(windows/system32/drivers/etc/hots)add:
 192.30.255.112  github.com git 
 185.31.16.184 github.global.ssl.fastly.net
