@@ -13,10 +13,10 @@ categories:
 - 软件
 ---
 
-# hexo-theme-matery
+# Matery 主题详细配置教程
 
 > 这是一个采用 `Material Design` 和响应式设计的 Hexo 博客主题。
-
+具体怎么样创建你的Blog可以查看该[链接](https://guohaoxin.top/2019/10/05/2019-hexo-bulid/)
 ## 配置
 
 ### 切换主题
