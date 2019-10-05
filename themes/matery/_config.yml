@@ -4,15 +4,21 @@ menu:
   Index:
     url: /
     icon: fas fa-home
+  OpenSees学习:
+    url: /OpenSees
+    icon: fas fa-edit
+  PM学习:
+    url: /PM
+    icon: fas fa-child
   Tags:
     url: /tags
     icon: fas fa-tags
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
+  #Archives:
+    #url: /archives
+    #icon: fas fa-archive
   download:
     url: /download
     icon: fas fa-download
@@ -57,7 +63,7 @@ dream:
 # 是否在首页显示音乐.
 music:
   enable: true
-  showTitle: true
+  showTitle: false
   title: 听听音乐
   fixed: false # 开启吸底模式
   autoplay: true # 是否自动播放
