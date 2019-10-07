@@ -11,6 +11,7 @@ layout: "friends"
 * **名称：** HaoxinGuo
 * **地址：** http://guohaoxin.top
 * **简介：** PMer & Bridger & Coder
+
 例如我的博客友链，大家可以加到自己博客里哦：
 
 # 常用网站

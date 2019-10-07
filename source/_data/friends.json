@@ -5,5 +5,12 @@
         "title": "访问主页",
         "introduction": "我的Github主页",
         "avatar": "/medias/avatars/myzhihu.png"
-    }
+    },
+	{
+		"name": "冷大大猫",
+		"url": "https://www.ztyangjoy.cn/",
+		"title": "访问主页",
+        "introduction": "简单点，暴富 美食 吉他 摄影 音乐 乒乓球 旅游 编程",
+        "avatar": "/medias/avatars/leng.png"
+	}
 ]

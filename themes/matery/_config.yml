@@ -254,7 +254,7 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
+  enable: false
   owner: 'HaoxinGuo'
   repo: 'HaoxinGuo.github.io'
   oauth:
@@ -288,15 +288,15 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: 1NDO3bckGhLDCMaDqpWixLHN-gzGzoHsz
+  appKey: UzfyRJE2HIdp5sBjWLEDHT84
   notify: false
   verify: false
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
+  placeholder: 'If you have any questions, please contact me' # Comment Box placeholder
   background: /medias/comment_bg.png
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
@@ -327,8 +327,8 @@ busuanziStatistics:
 # Add google analytics configuration
 # 添加 Google Analytics 配置
 googleAnalytics:
-  enable: false
-  id:
+  enable: true
+  id: UA-148950328-1
 
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置
@@ -495,7 +495,8 @@ instantpage: true
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
 banner: true
-
+sitemap:
+  path: sitemap.xml
 #ICP备案信息尾部显示
 icp:
   enable: false

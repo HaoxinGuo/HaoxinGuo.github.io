@@ -5,7 +5,7 @@
 # Site
 title: Haoxin的博客
 subtitle: ghxtju
-description: 同济大学 | 土木工程学院 | 桥梁工程系
+description: 同济大学 | 土木工程学院 | 桥梁工程系 | PM | Iter | Bridger
 keywords: "Bridge PM ITer Matlab Python"
 author: Haoxin
 language: zh-CN
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url:  http://guohaoxin.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -71,7 +71,6 @@ feed:
 Plugins:
 - hexo-generator-baidu-sitemap
 - hexo-generator-sitemap
-
 baidusitemap:
     path: baidusitemap.xml
 sitemap:
@@ -145,10 +144,12 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
-
+# 天气接口插件
+weather:
+  enable: true
 
 baidu_url_submit:
   count: 100
   host: guohaoxin.top
-  token: 887e25cc9b86260d78370020b3164617
+  token: ArO1BJUvB5ncy29Q
   path: baidu_urls.txt
