@@ -146,7 +146,7 @@ githubEmojis:
   customEmojis:
 # 天气接口插件
 weather:
-  enable: true
+  enable: false
 
 baidu_url_submit:
   count: 100

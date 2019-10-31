@@ -2,7 +2,7 @@
 /*小屏幕下(手机类)的样式*/
 @media only screen and (max-width: 601px) {
     .container {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -22,8 +22,8 @@
 
     .head-container {
         position: absolute;
-        padding: 0px 200px;
-        width: 100%;
+        padding: 0px 60px;
+        width: 95%;
     }
 
     .post-container {
@@ -179,7 +179,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image:linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
