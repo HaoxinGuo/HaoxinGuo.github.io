@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Haoxin的博客</title>
+  
+  <subtitle>ghxtju</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://guohaoxin.top/"/>
+  <updated>2020-02-07T12:03:12.745Z</updated>
+  <id>http://guohaoxin.top/</id>
+  
+  <author>
+    <name>Haoxin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>产品面试系列——如何回答改进一款产品</title>
+    <link href="http://guohaoxin.top/product.html"/>
+    <id>http://guohaoxin.top/product.html</id>
+    <published>2020-02-07T12:01:12.000Z</published>
+    <updated>2020-02-07T12:03:12.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿# 
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://guohaoxin.top/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书笔记 PM" scheme="http://guohaoxin.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Opensees plotter</title>
+    <link href="http://guohaoxin.top/opensees-plotter.html"/>
+    <id>http://guohaoxin.top/opensees-plotter.html</id>
+    <published>2019-10-31T11:29:49.000Z</published>
+    <updated>2020-02-07T11:33:49.791Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基于Python-Matlab的OpenSees模型绘制及振型检验&quot;&gt;&lt;a href=&quot;#基于Python-Matlab的OpenSees模型绘制及振型检验&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
+    
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/tags/OpenSees/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python study</title>
+    <link href="http://guohaoxin.top/python-study.html"/>
+    <id>http://guohaoxin.top/python-study.html</id>
+    <published>2019-10-18T13:57:38.000Z</published>
+    <updated>2020-02-07T11:33:49.794Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-Python&quot;&gt;&lt;code class=&quot;language-Python&quot;&gt;from random import randint
+money = 1000
+while money&gt;0:
+   
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://guohaoxin.top/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://guohaoxin.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenSees坐标转换</title>
+    <link href="http://guohaoxin.top/2019-opensees-crdtrans.html"/>
+    <id>http://guohaoxin.top/2019-opensees-crdtrans.html</id>
+    <published>2019-10-09T08:59:48.000Z</published>
+    <updated>2020-02-07T11:33:49.681Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;坐标转换&quot;&gt;&lt;a href=&quot;#坐标转换&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
+    
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/tags/OpenSees/"/>
+    
+      <category term="CrdTrans" scheme="http://guohaoxin.top/tags/CrdTrans/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Element Recorder（单元记录器）</title>
+    <link href="http://guohaoxin.top/2019-openseesstudyelementrecorder.html"/>
+    <id>http://guohaoxin.top/2019-openseesstudyelementrecorder.html</id>
+    <published>2019-10-09T04:28:25.000Z</published>
+    <updated>2020-02-07T11:33:49.686Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Element-Recorder（单元记录器）&quot;&gt;&lt;a href=&quot;#Element-Recorder（单元记录器）&quot; class=&quot;headerlink&quot; title=&quot;Element Recorder（单元记录器）&quot;&gt;&lt;/a&gt;Element
+        
+      
+    
+    </summary>
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
+    
+    
+      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
+    
+      <category term="Element" scheme="http://guohaoxin.top/tags/Element/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenseesStudy-RecoderNode</title>
+    <link href="http://guohaoxin.top/2019-openseesstudy-recodernode.html"/>
+    <id>http://guohaoxin.top/2019-openseesstudy-recodernode.html</id>
+    <published>2019-10-09T04:03:01.000Z</published>
+    <updated>2020-02-07T11:33:49.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;h1 id=&quot;命令详细解释&quot;&gt;&lt;a href=&quot;#命令详细解释&quot; class=&quot;headerlink&quot; title=&quot;命令详细解释&quot;&gt;&lt;/a&gt;命令详细解释&lt;/h1&gt;&lt;p&gt;记录节点在每一步的值，其命令格式如下：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+      <category term="Opensees" scheme="http://guohaoxin.top/categories/Opensees/"/>
+    
+    
+      <category term="Opensees" scheme="http://guohaoxin.top/tags/Opensees/"/>
+    
+      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenSees学习之Tcl命令学习</title>
+    <link href="http://guohaoxin.top/2019-tclstudy.html"/>
+    <id>http://guohaoxin.top/2019-tclstudy.html</id>
+    <published>2019-10-08T07:24:40.000Z</published>
+    <updated>2020-02-07T11:33:49.718Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基本语法&quot;&gt;&lt;a href=&quot;#基本语法&quot; class=&quot;headerlink&quot; title=&quot;基本语法&quot;&gt;&lt;/a&gt;基本语法&lt;/h1&gt;&lt;h2 id=&quot;Tcl命令的基本格式&quot;&gt;&lt;a href=&quot;#Tcl命令的基本格式&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Tcl" scheme="http://guohaoxin.top/categories/Tcl/"/>
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/categories/Tcl/OpenSees/"/>
+    
+    
+      <category term="Tcl" scheme="http://guohaoxin.top/tags/Tcl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬虫51job，51租房</title>
+    <link href="http://guohaoxin.top/2019-sprider-51job.html"/>
+    <id>http://guohaoxin.top/2019-sprider-51job.html</id>
+    <published>2019-10-06T11:49:25.000Z</published>
+    <updated>2020-02-07T11:33:49.790Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;51job&quot;&gt;&lt;a href=&quot;#51job&quot; class=&quot;headerlink&quot; title=&quot;51job&quot;&gt;&lt;/a&gt;51job&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spyder" scheme="http://guohaoxin.top/tags/Spyder/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AwesomeOpensees</title>
+    <link href="http://guohaoxin.top/2019-awesomeopensees.html"/>
+    <id>http://guohaoxin.top/2019-awesomeopensees.html</id>
+    <published>2019-10-05T09:02:21.000Z</published>
+    <updated>2020-02-07T11:33:49.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Awesome-OpenSees&quot;&gt;&lt;a href=&quot;#Awesome-OpenSees&quot; class=&quot;headerlink&quot; title=&quot;Awesome-OpenSees&quot;&gt;&lt;/a&gt;Awesome-OpenSees&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
+    
+    
+      <category term="OpenSees" scheme="http://guohaoxin.top/tags/OpenSees/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery 主题详细配置教程</title>
+    <link href="http://guohaoxin.top/2019-hexo-bulid.html"/>
+    <id>http://guohaoxin.top/2019-hexo-bulid.html</id>
+    <published>2019-10-05T05:01:07.000Z</published>
+    <updated>2020-02-07T11:33:49.723Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Matery-主题详细配置教程&quot;&gt;&lt;a href=&quot;#Matery-主题详细配置教程&quot; class=&quot;headerlink&quot; title=&quot;Matery 主题详细配置教程&quot;&gt;&lt;/a&gt;Matery
+        
+      
+    
+    </summary>
+    
+      <category term="软件" scheme="http://guohaoxin.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="软件" scheme="http://guohaoxin.top/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>怎么样创建你的Blog</title>
+    <link href="http://guohaoxin.top/2019-how-to-build-your-blog.html"/>
+    <id>http://guohaoxin.top/2019-how-to-build-your-blog.html</id>
+    <published>2019-10-03T16:13:07.000Z</published>
+    <updated>2020-02-07T11:33:49.762Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;我的博客源代码地址&quot;&gt;&lt;a href=&quot;#我的博客源代码地址&quot; class=&quot;headerlink&quot; title=&quot;我的博客源代码地址&quot;&gt;&lt;/a&gt;我的博客源代码地址&lt;/h1&gt;&lt;p&gt;大家可以直接素质二连，star&amp;amp;fork我的博客源代码：&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="软件" scheme="http://guohaoxin.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="软件" scheme="http://guohaoxin.top/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>how to fix connection rest by port-GIt</title>
+    <link href="http://guohaoxin.top/2019-how-to-fix-connection-rest-by-port.html"/>
+    <id>http://guohaoxin.top/2019-how-to-fix-connection-rest-by-port.html</id>
+    <published>2019-10-03T08:54:05.000Z</published>
+    <updated>2020-02-07T11:33:49.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;今天就在准备更新我的博客的时候发现突然git连不上我的repositories&lt;br&gt;经过测试发现Connection
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="http://guohaoxin.top/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://guohaoxin.top/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「AppSo」页面原型还原</title>
+    <link href="http://guohaoxin.top/2019-pm-appso-origin.html"/>
+    <id>http://guohaoxin.top/2019-pm-appso-origin.html</id>
+    <published>2019-10-03T08:20:56.000Z</published>
+    <updated>2020-02-07T11:33:49.689Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：「AppSo」页面原型还原&quot;&gt;&lt;a href=&quot;#问题：「AppSo」页面原型还原&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「AppSo」页面流程还原</title>
+    <link href="http://guohaoxin.top/2019-pm-appso.html"/>
+    <id>http://guohaoxin.top/2019-pm-appso.html</id>
+    <published>2019-10-03T08:16:34.000Z</published>
+    <updated>2020-02-07T11:33:49.686Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：「AppSo」页面流程还原&quot;&gt;&lt;a href=&quot;#问题：「AppSo」页面流程还原&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>体验「美柚」</title>
+    <link href="http://guohaoxin.top/2019-pm-meiyou.html"/>
+    <id>http://guohaoxin.top/2019-pm-meiyou.html</id>
+    <published>2019-10-03T06:57:02.000Z</published>
+    <updated>2020-02-07T11:33:49.714Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：体验「美柚」&quot;&gt;&lt;a href=&quot;#问题：体验「美柚」&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>体验「得到」</title>
+    <link href="http://guohaoxin.top/2019-pm-dedao.html"/>
+    <id>http://guohaoxin.top/2019-pm-dedao.html</id>
+    <published>2019-10-03T06:42:54.000Z</published>
+    <updated>2020-02-07T11:33:49.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：体验「得到」&quot;&gt;&lt;a href=&quot;#问题：体验「得到」&quot; class=&quot;headerlink&quot; title=&quot;问题：体验「得到」&quot;&gt;&lt;/a&gt;问题：体验「得到」&lt;/h1&gt;&lt;h1 id=&quot;产品是什么？&quot;&gt;&lt;a href=&quot;#产品是什么？&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>需求分析及优先级排序</title>
+    <link href="http://guohaoxin.top/2019-pm-demand-analysis.html"/>
+    <id>http://guohaoxin.top/2019-pm-demand-analysis.html</id>
+    <published>2019-10-03T06:22:26.000Z</published>
+    <updated>2020-02-07T11:33:49.710Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：需求分析及优先级排序&quot;&gt;&lt;a href=&quot;#问题：需求分析及优先级排序&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「网易云音乐」登录流程还原</title>
+    <link href="http://guohaoxin.top/2019-pm-music163.html"/>
+    <id>http://guohaoxin.top/2019-pm-music163.html</id>
+    <published>2019-10-03T06:12:35.000Z</published>
+    <updated>2020-02-07T11:33:49.717Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;产品介绍&quot;&gt;&lt;a href=&quot;#产品介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PM" scheme="http://guohaoxin.top/categories/PM/"/>
+    
+    
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言学习笔记</title>
+    <link href="http://guohaoxin.top/2019-cprogramming.html"/>
+    <id>http://guohaoxin.top/2019-cprogramming.html</id>
+    <published>2019-09-30T11:28:05.000Z</published>
+    <updated>2020-02-07T11:33:49.676Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第一章-C语言概述&quot;&gt;&lt;a href=&quot;#第一章-C语言概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 C语言概述&quot;&gt;&lt;/a&gt;第一章
+        
+      
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://guohaoxin.top/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://guohaoxin.top/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown文件和Word文件的转换</title>
+    <link href="http://guohaoxin.top/2019-maandword.html"/>
+    <id>http://guohaoxin.top/2019-maandword.html</id>
+    <published>2019-09-30T10:00:11.000Z</published>
+    <updated>2020-02-07T11:33:49.789Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件" scheme="http://guohaoxin.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="软件 技巧 Markdown Word" scheme="http://guohaoxin.top/tags/%E8%BD%AF%E4%BB%B6-%E6%8A%80%E5%B7%A7-Markdown-Word/"/>
+    
+  </entry>
+  
+</feed>
