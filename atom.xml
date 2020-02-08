@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guohaoxin.top/"/>
-  <updated>2020-02-07T12:03:12.745Z</updated>
+  <updated>2020-02-07T12:04:58.086Z</updated>
   <id>http://guohaoxin.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://guohaoxin.top/product.html"/>
     <id>http://guohaoxin.top/product.html</id>
     <published>2020-02-07T12:01:12.000Z</published>
-    <updated>2020-02-07T12:03:12.745Z</updated>
+    <updated>2020-02-07T12:04:58.086Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="读书笔记" scheme="http://guohaoxin.top/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="产品面试系列文章" scheme="http://guohaoxin.top/categories/%E4%BA%A7%E5%93%81%E9%9D%A2%E8%AF%95%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="读书笔记 PM" scheme="http://guohaoxin.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-PM/"/>
+      <category term="PM" scheme="http://guohaoxin.top/tags/PM/"/>
     
   </entry>
   
@@ -83,7 +83,7 @@
         
           &lt;pre class=&quot;line-numbers language-Python&quot;&gt;&lt;code class=&quot;language-Python&quot;&gt;from random import randint
 money = 1000
-while money&gt;0:
+while money&amp;gt;0:
    
         
       
@@ -147,9 +147,9 @@ while money&gt;0:
       <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
     
     
-      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
-    
       <category term="Element" scheme="http://guohaoxin.top/tags/Element/"/>
+    
+      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
     
   </entry>
   
@@ -177,9 +177,9 @@ while money&gt;0:
       <category term="Opensees" scheme="http://guohaoxin.top/categories/Opensees/"/>
     
     
-      <category term="Opensees" scheme="http://guohaoxin.top/tags/Opensees/"/>
-    
       <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
+    
+      <category term="Opensees" scheme="http://guohaoxin.top/tags/Opensees/"/>
     
   </entry>
   
