@@ -65,7 +65,7 @@ music:
   enable: true
   showTitle: false
   title: 听听音乐
-  fixed: false # 开启吸底模式
+  fixed: true # 开启吸底模式
   autoplay: true # 是否自动播放
   theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
@@ -442,7 +442,7 @@ tidio:
  
 #背景canvas-nest
 canvas_nest:
-  enable: true
+  enable: false
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -451,7 +451,7 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: true
+  enable: false
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
@@ -459,7 +459,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: true
+  enable: false
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
