@@ -530,7 +530,7 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        709
+                        693
                     </div>
                     
 
@@ -555,9 +555,9 @@
             <div id="articleContent">
                 <h1 id="坐标转换"><a href="#坐标转换" class="headerlink" title="坐标转换"></a>坐标转换</h1><p>在opensees建模时需要用到几何坐标转换，使用几何转换命令（geomTransf）构造坐标转换（CrdTransf）对象，将梁单元的刚度和抗力从基础坐标系转换到全局坐标系。该命令至少有一个参数，即转换类型。下面概述了每种类型。</p>
 <h2 id="线性转换"><a href="#线性转换" class="headerlink" title="线性转换"></a>线性转换</h2><p>该命令用于构造线性坐标变换（LinearCrdTransf）对象，该对象执行从基础系统到全局坐标系的梁刚度和阻力的线性几何变换。<br>对于一个二维问题：</p>
-<pre class="line-numbers language-Tcl"><code class="language-Tcl">geomTransf Linear $transfTag &lt;-jntOffset $dXi $dYi $dXj $dYj&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-Tcl"><code class="language-Tcl">geomTransf Linear $transfTag <-jntOffset $dXi $dYi $dXj $dYj><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>对于一个三维问题：</p>
-<pre class="line-numbers language-Tcl"><code class="language-Tcl">geomTransf Linear $transfTag $vecxzX $vecxzY $vecxzZ &lt;-jntOffset $dXi $dYi $dZi $dXj $dYj $dZj&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-Tcl"><code class="language-Tcl">geomTransf Linear $transfTag $vecxzX $vecxzY $vecxzZ <-jntOffset $dXi $dYi $dZi $dXj $dYj $dZj><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>二维框架分析不需要指定局部坐标方向</strong>，故可以采用以下方式定义坐标转换：</p>
 <pre><code>gemTransf Linear $transfTag</code></pre><h2 id="参数解析"><a href="#参数解析" class="headerlink" title="参数解析"></a>参数解析</h2><table>
 <thead>
@@ -1081,10 +1081,10 @@
                         
                             from random import randint
 money = 1000
-while money&gt;0:
+while money>0:
     print('your money is ',money)
     needs_go_on = True
-    w
+    whil
                         
                     </div>
                     <div class="publish-info">
@@ -1156,12 +1156,12 @@ recorder Element \&lt;-file $fileNa
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Element/">
-                        <span class="chip bg-color">Element</span>
-                    </a>
-                    
                     <a href="/tags/Recorder/">
                         <span class="chip bg-color">Recorder</span>
+                    </a>
+                    
+                    <a href="/tags/Element/">
+                        <span class="chip bg-color">Element</span>
                     </a>
                     
                 </div>
@@ -1294,7 +1294,7 @@ recorder Element \&lt;-file $fileNa
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">111.3k</span>&nbsp;字
+                class="white-color">93.3k</span>&nbsp;字
             
             
             
@@ -1526,11 +1526,6 @@ $(function () {
     </script>
     
 
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
     
 
     

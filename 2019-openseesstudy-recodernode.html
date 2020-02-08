@@ -10,7 +10,17 @@
     <meta name="360-site-verification" content>
     <meta name="description" content="
 命令详细解释记录节点在每一步的值，其命令格式如下：
-recorder Node &amp;lt;-file $fileName&amp;gt; &amp;lt;-xml $fileName&amp;gt; &amp;lt;-binary $fileName&amp;gt; &amp;lt;-t">
+recorder Node              -dof ($dof1 $dof2 ...) $respType
+
+
+
+字符段
+解释
+
+
+
+$fileName
+输出记录器数据到文件">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -496,12 +506,12 @@ recorder Node &amp;lt;-file $fileName&amp;gt; &amp;lt;-xml $fileName&amp;gt; &am
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Recorder/">
-                                <span class="chip bg-color">Recorder</span>
-                            </a>
-                        
                             <a href="/tags/Opensees/">
                                 <span class="chip bg-color">Opensees</span>
+                            </a>
+                        
+                            <a href="/tags/Recorder/">
+                                <span class="chip bg-color">Recorder</span>
                             </a>
                         
                     </div>
@@ -531,14 +541,14 @@ recorder Node &amp;lt;-file $fileName&amp;gt; &amp;lt;-xml $fileName&amp;gt; &am
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        755
+                        706
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        2 分
                     </div>
                     
                 
@@ -556,7 +566,7 @@ recorder Node &amp;lt;-file $fileName&amp;gt; &amp;lt;-xml $fileName&amp;gt; &am
             <div id="articleContent">
                 <hr>
 <h1 id="命令详细解释"><a href="#命令详细解释" class="headerlink" title="命令详细解释"></a>命令详细解释</h1><p>记录节点在每一步的值，其命令格式如下：</p>
-<pre class="line-numbers language-Tcl"><code class="language-Tcl">recorder Node &lt;-file $fileName&gt; &lt;-xml $fileName&gt; &lt;-binary $fileName&gt; &lt;-tcp $inetAddress $port&gt; &lt;-precision $nSD&gt;  &lt;-timeSeries $tsTag&gt; &lt;-time&gt; &lt;-dT $deltaT&gt; &lt;-closeOnWrite&gt; &lt;-node $node1 $node2 ...&gt; &lt;-nodeRange $startNode $endNode&gt; &lt;-region $regionTag&gt; -dof ($dof1 $dof2 ...) $respType<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-Tcl"><code class="language-Tcl">recorder Node <-file $fileName> <-xml $fileName> <-binary $fileName> <-tcp $inetAddress $port> <-precision $nSD>  <-timeSeries $tsTag> <-time> <-dT $deltaT> <-closeOnWrite> <-node $node1 $node2 ...> <-nodeRange $startNode $endNode> <-region $regionTag> -dof ($dof1 $dof2 ...) $respType<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -1172,12 +1182,12 @@ recorder Element \&lt;-file $fileNa
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Element/">
-                        <span class="chip bg-color">Element</span>
-                    </a>
-                    
                     <a href="/tags/Recorder/">
                         <span class="chip bg-color">Recorder</span>
+                    </a>
+                    
+                    <a href="/tags/Element/">
+                        <span class="chip bg-color">Element</span>
                     </a>
                     
                 </div>
@@ -1363,7 +1373,7 @@ recorder Element \&lt;-file $fileNa
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">111.3k</span>&nbsp;字
+                class="white-color">93.3k</span>&nbsp;字
             
             
             
@@ -1595,11 +1605,6 @@ $(function () {
     </script>
     
 
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
     
 
     

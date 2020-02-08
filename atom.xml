@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guohaoxin.top/"/>
-  <updated>2020-02-07T12:04:58.086Z</updated>
+  <updated>2020-02-08T03:43:17.999Z</updated>
   <id>http://guohaoxin.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://guohaoxin.top/product.html"/>
     <id>http://guohaoxin.top/product.html</id>
     <published>2020-02-07T12:01:12.000Z</published>
-    <updated>2020-02-07T12:04:58.086Z</updated>
+    <updated>2020-02-08T03:43:17.999Z</updated>
     
     <summary type="html">
     
@@ -83,7 +83,7 @@
         
           &lt;pre class=&quot;line-numbers language-Python&quot;&gt;&lt;code class=&quot;language-Python&quot;&gt;from random import randint
 money = 1000
-while money&amp;gt;0:
+while money&gt;0:
    
         
       
@@ -147,9 +147,9 @@ while money&amp;gt;0:
       <category term="OpenSees" scheme="http://guohaoxin.top/categories/OpenSees/"/>
     
     
-      <category term="Element" scheme="http://guohaoxin.top/tags/Element/"/>
-    
       <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
+    
+      <category term="Element" scheme="http://guohaoxin.top/tags/Element/"/>
     
   </entry>
   
@@ -177,9 +177,9 @@ while money&amp;gt;0:
       <category term="Opensees" scheme="http://guohaoxin.top/categories/Opensees/"/>
     
     
-      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
-    
       <category term="Opensees" scheme="http://guohaoxin.top/tags/Opensees/"/>
+    
+      <category term="Recorder" scheme="http://guohaoxin.top/tags/Recorder/"/>
     
   </entry>
   

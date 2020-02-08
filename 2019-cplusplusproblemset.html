@@ -529,14 +529,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        17.9k
+                        719
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        65 分
+                        2 分
                     </div>
                     
                 
@@ -580,16 +580,16 @@
 <pre class="line-numbers language-c++"><code class="language-c++">#include <iostream>
 int main()
 {
-        std::cout &lt;&lt; "Enter two numbers:" &lt;&lt; std::endl;
+        std::cout << "Enter two numbers:" << std::endl;
         int v1 = 0, v2 = 0;
-        std::cin &gt;&gt; v1 &gt;&gt; v2;
-        std::cout &lt;&lt; "The sum of " &lt;&lt; v1 &lt;&lt; " and " &lt;&lt; v2 &lt;&lt; " is "
-                  &lt;&lt; v1 + v2 &lt;&lt; std::endl;
+        std::cin >> v1 >> v2;
+        std::cout << "The sum of " << v1 << " and " << v2 << " is "
+                  << v1 + v2 << std::endl;
         return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></iostream></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><code>#include &lt;iostream&gt;</code>告诉编译器我们想要使用iostream库。尖括号中的名字指出了一个<strong>头文件</strong>（header）。每个使用标准库设施的程序都必须包含相关的头文件。#include指令和头文件的名字必须写在同一行中。#include指令一般出现在所有函数之外，源文件的开始位置。</p>
 <p><strong>向流写入数据</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">std::cout &lt;&lt; "Enter two numbers" &lt;&lt; std::endl;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">std::cout << "Enter two numbers" << std::endl;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这条语句执行了一个<strong>表达式</strong>（expression）。在C++中，一个表达式产生一个计算结果，它由一个或多个运算对象和（通常是）一个运算符组成。这条语句中的表达式使用了<strong>输出运算符</strong>（&lt;&lt;）。</p>
 <p><code>&lt;&lt;</code>运算符接受两个运算对象：左侧必须是一个ostream对象；右侧是要打印的值。此运算符将给定的值写到给定的ostream对象中。计算结果是左侧的ostream对象。</p>
 <p>“Enter two numbers”是一个<strong>字符串字面值常量</strong>（string literal），它是用一对双引号包围的字符序列。</p>
@@ -602,7 +602,7 @@ int main()
 <p>首先定义两个名为v1和v2的<strong>变量</strong>（variable）来保存输入：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int v1 = 0, v2 = 0;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这两个变量被定义为int类型，并<strong>初始化</strong>（initialize）为0。初始化一个变量，就是在变量创建的同时为它赋予一个值。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">std::cin &gt;&gt; v1 &gt;&gt; v2;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">std::cin >> v1 >> v2;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这条语句读入输入数据。<strong>输入运算符</strong>（&gt;&gt;）接受一个istream作为其左侧运算对象，接受一个对象作为其右侧运算对象。它从给定的istream读入数据，并存入给定对象中。输入运算符返回其左侧运算对象作为计算结果。</p>
 <h2 id="注释简介"><a href="#注释简介" class="headerlink" title="注释简介"></a>注释简介</h2><p>注释（comments）通常用于概述算法，确定变量的用途，或者解释晦涩难懂的代码段。编译器会忽略掉注释，因此注释对程序的行为和性能不会有任何影响。</p>
 <p><strong>C++中注释的种类</strong></p>
@@ -622,7 +622,7 @@ int main()
 <p>statement可以是语句块，也叫循环体。所谓语句块（block），就是用花括号包围的语句序列。语句块也是语句的一种，在任何要求使用语句的地方都可以使用语句块。</p>
 <h3 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h3><p>每个for语句都包含两部分：循环头和循环体。循环头控制循环体的执行次数，它由三部分组成：一个初始化语句（init-statement）、一个循环条件（condition）以及一个表达式（expression）。</p>
 <p>比如：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">for (int val = 1; val &lt;= 10; ++val)
+<pre class="line-numbers language-c++"><code class="language-c++">for (int val = 1; val <= 10; ++val)
     sum += val;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>for循环的总体执行流程：</p>
 <ol start="0">
@@ -636,7 +636,7 @@ int main()
 </li>
 </ol>
 <h3 id="读取数量不定的输入数据"><a href="#读取数量不定的输入数据" class="headerlink" title="读取数量不定的输入数据"></a>读取数量不定的输入数据</h3><p>使用这样的方法连续读入数据，直到遇到文件尾（Linux下，输入CTRL+D）：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">while (std::cin &gt;&gt; value)
+<pre class="line-numbers language-c++"><code class="language-c++">while (std::cin >> value)
     statement<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>输入运算符返回其左侧对象，因此，此循环条件检测的是std::cin。</p>
 <p>当使用一个istream对象作为条件时，其效果是检测流的状态。如果流是有效的，那么检测成功。当遇到文件结束符（end-of-file），或遇到一个无效输入时，istream对象的状态会变为无效。</p>
@@ -715,7 +715,7 @@ string s7(10, 'c');  // 直接初始化<span aria-hidden="true" class="line-numb
 <h2 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h2><ol>
 <li>vector是对象的集合，也叫容器（container）。集合中的每个对象都有一个索引，索引用于访问对象。  </li>
 <li>vector是一个类模板。模板是为编译器提供的一份生成类或函数的说明。  </li>
-<li>vector是模板而非类型，由vector生成的类型必须包含元素的类型，如：  <pre class="line-numbers language-c++"><code class="language-c++">vector<int> v;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></int></code></pre>
+<li>vector是模板而非类型，由vector生成的类型必须包含元素的类型，如：  <pre class="line-numbers language-c++"><code class="language-c++">vector<int> v;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><strong>vector中存放的是对象，而引用不是对象，故不能存储引用。</strong>  <h3 id="定义和初始化vector对象"><a href="#定义和初始化vector对象" class="headerlink" title="定义和初始化vector对象"></a>定义和初始化vector对象</h3>vector模板控制着初始化向量的方法。定义vector对象的方法有：  </li>
 </ol>
@@ -739,7 +739,7 @@ string s7(10, 'c');  // 直接初始化<span aria-hidden="true" class="line-numb
 <li><code>v1 = {a,b,c...}</code>，列表中的元素将拷贝替换v1中的  </li>
 <li><code>v1 == v2</code>, <code>v1 != v2</code>，元素数量相同，对应位置的元素也相等，则相等  </li>
 <li>&lt;,&lt;=,&gt;,&gt;=，比首个相异元素的大小，如都一样，比长度，即字典顺序<br>size返回的类型由vector定义的size_type类型。<pre class="line-numbers language-c++"><code class="language-c++">vector<int>::size_type    // 正确
-vector::size_type         // 错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></code></pre>
+vector::size_type         // 错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ul>
 <p><strong>只有当元素的值可比较时，vector对象才能被比较。只能对确已存在的元素执行下标操作。</strong>  </p>
@@ -757,7 +757,7 @@ auto e = v.end();<span aria-hidden="true" class="line-numbers-rows"><span></span
 </ul>
 <p><strong>迭代器类型</strong><br>标准库类型使用iterator和const_iterator来表示迭代器类型。<br>如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">vector<int>::iterator it1;
-vector<int>::const_iterator it2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></int></code></pre>
+vector<int>::const_iterator it2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>it1能读写元素，而it2只能读。<br>认定某个类型是迭代器类型当且仅当它支持一套操作，这套操作使得我们能访问容器的元素，或者从某个元素移动到另外一个元素。<br><strong>begin和end运算符</strong>begin和end返回的具体类型由对象是否是常量决定。如果对象是常量，返回const_iterator，否则返回iterator。<br>为了专门得到const_iterator类型的迭代器，C++11中可以使用cbegin和cend：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto it = v.cbegin();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>箭头运算符</strong>即<code>-&gt;</code>，它把解引用和成员访问两个操作结合在一起。即：<code>(*iter).mem</code>等价于<code>iter-&gt;mem</code>。<br><strong>某些对vector对象的操作会使迭代器失效</strong>任何一种可能改变vector对象容量的操作，比如push_back，都会使该vector对象的迭代器失效。</p>
@@ -789,12 +789,12 @@ int a2[] = a1; // 非法<span aria-hidden="true" class="line-numbers-rows"><span
 <ol>
 <li>定义一个指针数组<pre class="line-numbers language-c++"><code class="language-c++">int* a[10] = {};<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li>定义一个指向数组的指针：  <pre class="line-numbers language-c++"><code class="language-c++">int (*ptr)[10] = &amp;a;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li>定义一个指向数组的指针：  <pre class="line-numbers language-c++"><code class="language-c++">int (*ptr)[10] = &a;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li>定义一个绑定到数组的引用：  <pre class="line-numbers language-c++"><code class="language-c++">int (&amp;a_ref)[10] = a;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li>定义一个绑定到数组的引用：  <pre class="line-numbers language-c++"><code class="language-c++">int (&a_ref)[10] = a;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 默认情况下，类型修饰符从右向左依次绑定。不过理解数组的复杂声明时，应该由内向外理解。即从数组的名字开始按照由内向外的顺序阅读。  <h3 id="访问数组元素"><a href="#访问数组元素" class="headerlink" title="访问数组元素"></a>访问数组元素</h3>使用数组下标的时候，通常将其定义为size_t类型，这是一种机器相关的无符号类型。定义在cstddef头文件中，是C标准库stddef.h头文件的C++版本。可以使用范围for语句来遍历数组。  <pre class="line-numbers language-c++"><code class="language-c++">for (auto i : arr)
- cout &lt;&lt; i &lt;&lt; " ";
-cout &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+ cout << i << " ";
+cout << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <p><strong>得到数组的大小</strong></p>
@@ -806,7 +806,7 @@ decltype(a1) a2;<span aria-hidden="true" class="line-numbers-rows"><span></span>
 <pre class="line-numbers language-c++"><code class="language-c++">int a1[10] = {};
 auto a2(a1);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>指针也是迭代器</strong><br>string和vector的迭代器支持的运算，指针都支持。使用递增运算符既可以让指向数组元素的指针向前移动到下一个位置上。这样可以获取数组尾元素的下一个位置的指针：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">int *end = &amp;a[N];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">int *end = &a[N];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>不过C++11提供了begin和end函数，可以获取数组首元素的指针和尾后指针：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int a[10] = {};
 int *beg_p = begin(a);
@@ -822,7 +822,7 @@ i = *(p + 2);     // 等价于i = ia[2]<span aria-hidden="true" class="line-numb
 const char *c_s = s.c_str();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>无法保证返回的C风格字符串一直有效，因此通常在返回后再把它拷贝到另一个地方<br><strong>使用数组初始化vector对象</strong>如：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">int a[] = {1, 2, 3};
-vector<int> vec(begin(a), end(a));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></code></pre>
+vector<int> vec(begin(a), end(a));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>多维数组，实际上是数组的数组。<br>如：<code>int a[3][4]</code>，可由内而外理解，a是一个含有3个元素的数组，每个元素又是一个含有4个元素的数组。<br>对于二维数组，常把第一个维度看作行，第二个维度看作列。<br><strong>多维数组的初始化</strong>如：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">int a[3][4] = {
     {0, 1, 2, 3},
@@ -831,7 +831,7 @@ vector<int> vec(begin(a), end(a));<span aria-hidden="true" class="line-numbers-r
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>列表初始化中未列出的元素执行值初始化。<br><strong>多维数组的下标引用</strong><br>如果表达式含有的下标运算符数量和维度一样多，该表达式的结果将是给定类型的元素；否则表达式的结果是内层数组</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int a[3][4] = {};
-int (&amp;row)[4] = a[2]; // row绑定到a的第二个数组上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+int (&row)[4] = a[2]; // row绑定到a的第二个数组上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>使用范围for语句处理多维数组</strong><br>如果是外层循环，控制变量将得到数组类型。<br>除了最内层的循环外，其他所有循环控制变量都应该是引用类型（因为若不是引用，编译器会认为外层控制变量是指针类型，而无法遍历一个指针）。<br><strong>指针和多维数组</strong><br>当程序使用多维数组名字时，也会自动将其转换成指向数组首元素的指针。<br>多维数组的首元素是一个内层数组，故使用多维数组名将得到一个指向内层数组的指针。<br>即：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int a[2][3] = {};
 int (*p)[3] = a;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -880,13 +880,13 @@ char?*pc?=?reinterpret_cast&lt;char*&gt;(ip);</code></pre><p>我们必须牢记p
     handler-statements
 } // ...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>当选中了某个catch子句处理异常之后，执行与之对应的块。catch一旦完成，程序跳转到try语句块最后一个catch子句之后的那条语句继续执行。<br>try语句块内声明的变量在catch子句内无法访问。<br>一个简要的例子：  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">while (cin &gt;&gt; item1 &gt;&gt; item2) {
+<pre class="line-numbers language-c++"><code class="language-c++">while (cin >> item1 >> item2) {
     try {
         // ... 可能抛出一个异常的代码
     } catch (runtime_error err) {
-        cout &lt;&lt; err.what() &lt;&lt; "\nTry Again? Enter y or n" &lt;&lt; endl;
+        cout << err.what() << "\nTry Again? Enter y or n" << endl;
         char c;
-        cin &gt;&gt; c;
+        cin >> c;
         if (!cin || c == 'n')
             break; // 跳出while循环
     }
@@ -898,17 +898,17 @@ char?*pc?=?reinterpret_cast&lt;char*&gt;(ip);</code></pre><p>我们必须牢记p
 <li><strong>throw 表达式（throw expression）</strong>，异常检测部分使用throw表达式来表示它遇到了无法处理的问题。我们说throw<strong>引发（raise）</strong>了异常。  </li>
 <li><strong>try语句块（try block）</strong>，异常处理部分使用try语句块处理异常。try语句块以关键字try开始，并以一个或多个<strong>catch子句（catch clause）</strong>结束。try语句块中代码抛出的异常通常会被某个catch子句处理。  </li>
 <li>一套<strong>异常类（exception class）</strong>，用于在throw表达式和相关的catch子句之间传递异常的具体信息。  <h1 id="简单语句"><a href="#简单语句" class="headerlink" title="简单语句"></a>简单语句</h1>C++语言中的大多数语句都以分号结束，一个表达式，比如ival+5，末尾加上分号就变成了<strong>表达式语句</strong>(expression statement)，表达式语句的作用是执行表达式并丢弃掉求值结果：<pre class="line-numbers language-c++"><code class="language-c++">ival + 5;    // 无意义的表达式语句
-cout &lt;&lt; ival;// 有意义的表达式语句<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+cout << ival;// 有意义的表达式语句<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ul>
 <p><strong>空语句</strong><br>最简单的语句是<strong>空语句</strong>（null statement），它只有一个分号： </p>
 <pre class="line-numbers language-c++"><code class="language-c++">; // 空语句<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果在程序的某个地方，语法上需要一条语句但是逻辑上不需要，此时应该使用空语句。<br><strong>复合语句（块）</strong><br>复合语句（compound statement）是指用花括号括起来的语句和声明的序列，复合语句也被称作<strong>块</strong>（block）。一个块就是一个作用域。<br>如果在程序的某个地方，语法上需要一条语句，但是逻辑上需要多条语句，则应该使用复合语句。<br>所谓空块，是指内部没有任何语句的一对花括号。空块的作用等价于空语句：  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">while (cin &gt;&gt; s &amp;&amp; s != sought)
+<pre class="line-numbers language-c++"><code class="language-c++">while (cin >> s && s != sought)
 {}  // 空块<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h1 id="语句作用域"><a href="#语句作用域" class="headerlink" title="语句作用域"></a>语句作用域</h1><p>可以在if、switch、while和for语句的控制结构内定义变量。定义在控制结构当中的变量只在相应语句的内部可见，一旦语句结束，变量也就超出其作用范围了：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">while (int i = get_num()) // 每次迭代时创建并初始化
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
 i = 0;    // 错误，在循环外部无法访问<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h1><p>C++语言提供了两种按条件执行的语句。一种是if语句，它根据条件决定控制流；另一种是switch语句，它计算一个整型表达式的值，然后根据这个值从几条执行路径中选择一条。  </p>
 <h2 id="if语句-1"><a href="#if语句-1" class="headerlink" title="if语句"></a>if语句</h2><p>if语句的作用是：判断一个指定的条件是否为真，根据判断结果决定是否执行另外一条语句。  </p>
@@ -955,8 +955,8 @@ size_t count_calls()
 <pre class="line-numbers language-c++"><code class="language-c++">void fcn(const int i) {}
 void fcn(int i) {}    // 错误：重复定义<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>在C++中，允许我们定义若干具有相同名字的函数，不过前提是不同函数的形参列表有明显的区别。因为顶层const被忽略了，所以在上面的代码中传入两个fcn函数的参数可以完全一样（从而编译器不知道该调用哪一个）。<br><strong>指针或引用形参与const</strong><br>我们可以使用非常量初始化一个底层const，但是反过来不行（不能用一个常量初始化一个非底层const）；同时一个普通的引用必须用同类型的对象初始化。<br><strong>尽量使用常量引用</strong><br>把函数不会改变的形参定义成（普通的）引用是一种常见错误，这么做给函数的调用者一种误导，即函数可以修改它的实参的值。此外，使用引用而非常量引用也会极大地限制函数所能接受的实参类型（比如无法传入一个常量对象了）。<br>比如下面这个例子将导致编译错误（p192）：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">// 不良设计，第一个形参的类型应该是const string&amp;
-string::size_type find_char(string &amp;s, char c, string::size_type &amp;occurs);
+<pre class="line-numbers language-c++"><code class="language-c++">// 不良设计，第一个形参的类型应该是const string&
+string::size_type find_char(string &s, char c, string::size_type &occurs);
 //...
 find_char("Hello World", 'o', ctr); // 无法编译通过<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="数组形参"><a href="#数组形参" class="headerlink" title="数组形参"></a>数组形参</h3><p>当我们为函数传递一个数组时，实际上传递的是指向数组首元素的指针。<br>尽管不能以值传递的方式传递数组，但是我们可以把形参写成类似数组的形式：  </p>
@@ -972,10 +972,10 @@ void print(const int[10]);  // 这里的维度表示我们期望数组含有多�
 </ol>
 <p><strong>数组形参和const</strong><br>当函数不需要对数组元素执行写操作的时候，数组形参应该是指向const的指针。只有当函数确实要改变元素值的时候，才把形参定义成指向非常量的指针。<br><strong>数组引用形参</strong><br>C++语言允许将变量定义成数组的引用，基于同样的道理，形参也可以是数组的引用。此时，引用形参绑定到对应的实参上，也就是绑定到数组上。  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">// 正确，形参是数组的引用，维度是类型的一部分
-void print(int (&amp;arr)[10])
+void print(int (&arr)[10])
 {
     for (auto elem : arr)
-        cout &lt;&lt; elem &lt;&lt; endl;
+        cout << elem << endl;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>但这一用法也限制了print函数的可用性，我们只能将函数作用于大小为10的数组。<br><strong>传递多维数组</strong><br>和所有数组一样，当将多维数组传递给函数时，真正传递的是指向数组首元素的指针，也就是一个指向数组的指针。数组第二维（以及后面所有维度）的大小都是数组类型的一部分，不能省略：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">// matrix指向数组的首元素，该数组的元素是由10个整数构成的数组
@@ -1011,12 +1011,16 @@ return expression;<span aria-hidden="true" class="line-numbers-rows"><span></spa
 <pre class="line-numbers language-c++"><code class="language-c++">//调用string对象的size成员，该string对象有shorterstring函数返回
 auto sz = shorterstring(s1,s2).size();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>引用返回左值</strong><br>函数的返回类型决定函数调用是否是左值。调用一个返回引用的函数得到左值，其他返回类型得到右值。  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">char &amp;get_val(string &amp;str,string::size_type ix){
+<pre class="line-numbers language-c++"><code class="language-c++">char &get_val(string &str,string::size_type ix){
     return str[ix];
 }
 int main(){
     string s("a value");
-    cout&lt;<s<<endl; get_val(s,0)="A" ;="" cout<<s<<endl;="" return="" 0;="" }<span="" aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></s<<endl;></code></pre>
+    cout<<s<<endl;
+    get_val(s,0)='A';
+    cout<<s<<endl;
+    return 0;    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>列表初始化返回值</strong><br>C++11新标准规定，函数可以返回花括号包围的值的列表。此处的列表也用来对表示函数返回的临时量进行初始化。如果列表为空，临时量执行值初始化；否则，返回的值由函数的返回类型决定。<br><strong>主函数main的返回值</strong><br>我们允许main函数没有return语句直接结束，这样编译器将隐式地插入一条返回0的return语句，表示执行成功。<br>为了使返回值与机器无关，cstdlib头文件定义了两个预处理变量，可以用来表示成功与失败：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">int main()
 {
@@ -1043,41 +1047,41 @@ arrT* func(int i);       // func返回一个指向含有10个整数的数组的�
 </ul>
 <p><strong>使用尾置返回类型</strong><br>C++新标准提供了另一种简化上述func声明的方法，就是使用<strong>尾置返回类型（trailing return type）</strong>。任何函数的定义都能使用尾置返回，但是这种形式对于返回类型比较复杂的函数最有效。<br>尾置返回类型跟在形参列表后面并以一个-&gt;符号开头。为了表示函数真正的返回类型跟在形参列表之后，我们在本应该出现返回类型的地方放置一个<code>auto</code>：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">// func接受一个int类型的实参，返回一个指针，该指针指向含有10个整数的数组
-auto func(int i) -&gt; int(*)[10];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+auto func(int i) -> int(*)[10];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>使用decltype</strong><br>如果我们知道函数返回的指针将指向哪个数组，就可以使用decltype关键字声明返回类型（即获得一个数组类型）。例：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">int odd[] = {1, 3, 5, 7, 9};
 int even[] = {0, 2, 4, 6, 8};
 // 返回一个指针，该指针指向含有5个整数的数组
 decltype(odd) *arrPtr(int i)
 {
-    return (i % 2) ? &amp;odd : &amp;even;
+    return (i % 2) ? &odd : &even;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code> decltype并不负责把数组类型转换成对应的指针，所以decltype的结果只是一个数组，要想表示arrptr返回指针还必须在函数声明时加一个`*`的符号。</code></pre><h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><p>如果同一作用域内的几个函数名字相同但形参列表不同，我们称之为<strong>重载（overload）函数</strong>。比如：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">void print(const char *cp);
 void print(const int *beg, const int *end);
 void print(const int ia[], size_t size);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>这些函数接受的形参类型不一样，但是执行的操作非常类似。当调用这些函数时，编译器会根据传递的实参类型推断想要的是哪个函数。<br>函数的名字仅仅是让编译器知道它调用的是哪个函数，而函数重载可以在一定程度上减轻程序员起名字、记名字的负担。<br>main函数不能重载。<br>不允许两个函数除了返回类型以外其他所有的要素都相同。比如：  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">Record lookup(const Account&amp;);
-bool lookup(const Account&amp;);    // 错误，与上一个函数相比只有返回类型不同<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">Record lookup(const Account&);
+bool lookup(const Account&);    // 错误，与上一个函数相比只有返回类型不同<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre><code> my note: 返回类型不同的函数，也可以是重载的。只要函数名相同而形参有明显的不同。  </code></pre><p><strong>重载和const形参</strong><br>顶层const不影响传入函数的对象。一个拥有顶层const的形参无法和另一个没有顶层const的形参区分开来：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">Record lookup(Phone);
 Record lookup(const Phone);    // 重复声明<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果形参是某种类型的指针或引用，则通过区分其指向的是常量对象还是非常量对象可以实现函数重载，此时的const是底层的：  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">Record lookup(Account&amp;);       // 此函数作用于Account的引用
-Record lookup(const Account&amp;); // 新函数，作用于常量引用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">Record lookup(Account&);       // 此函数作用于Account的引用
+Record lookup(const Account&); // 新函数，作用于常量引用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>这种情况下，当我们传递一个非常量对象时，编译器会优先选用非常量版本的函数（尽管传给常量版本的也可以）。<br><strong>const_cast和重载</strong><br>const_cast在重载函数的情境中最有用。比如这两个重载函数：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">// 比较两个string对象的长度，返回较短的那个引用
-const string &amp;shorterString(const string &amp;s1, const string &amp;s2)
+const string &shorterString(const string &s1, const string &s2)
 {
-    return s1.size() &lt;= s2.size() ? s1 : s2; 
+    return s1.size() <= s2.size() ? s1 : s2; 
 }
 
 // 重载
-string &amp;shorterString(string &amp;s1, string &amp;s2)
+string &shorterString(string &s1, string &s2)
 {
-    auto &amp;r = shorterString(const_cast<const string&="">(s1), const_cast<const string&="">(s2));
+    auto &r = shorterString(const_cast<const string&>(s1), const_cast<const string&>(s2));
     return const_cast<string&>(r);
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></string&></const></const></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>下面重载的版本中，首先将它的实参强制转换成了对const的引用，然后调用了shorterString函数的const版本。const版本返回对const string的引用，这个引用事实上绑定在一个非常量实参上。因此，可以再将其转换回普通的const&amp;，这显然是安全的。<br>    传入非常量的实参将调用非常量的版本。<br><strong>调用重载的函数</strong><br>定义了一组重载函数后，我们需要以合理的实参调用它们。<strong>函数匹配（function matching）</strong>是指一个过程，在这个过程中我们把函数调用与一组重载函数中的某一个关联起来。编译器首先将调用的实参与重载集合中的每一个函数的形参进行比较，然后根据比较的结果决定到底调用哪个函数。<br>当调用重载函数时有三种可能的结果：  </p>
 <ul>
 <li>编译器找到一个与实参<strong>最佳匹配（best match）</strong>的函数，并生成调用该函数的代码。</li>
@@ -1106,7 +1110,7 @@ constexpr int foo = new_sz();<span aria-hidden="true" class="line-numbers-rows">
 {
 #ifndef NDEBUG
     // __func__是编译器定义的一个局部静态变量，用于存放函数的名字
-    cerr &lt;&lt; __func__ &lt;&lt; "": array size is: " &lt;&lt; size &lt;&lt; endl;
+    cerr << __func__ << "": array size is: " << size << endl;
 #endif
 
 // ...
@@ -1157,12 +1161,12 @@ int calc(const char*,const char*)
 int calc(char* const,char* const)
 //区别是他们的指针类型的形参是否是常量，属于顶层const,非法定义<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="函数指针"><a href="#函数指针" class="headerlink" title="函数指针"></a>函数指针</h2><p>函数指针指向的是函数而非对象。函数的类型由它的返回类型和形参类型共同决定，与函数名无关。例如：   </p>
-<pre class="line-numbers language-c++"><code class="language-c++">bool lengthCompare(const string&amp;, const string&amp;);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">bool lengthCompare(const string&, const string&);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>该函数的类型是：<code>bool (const string&amp;, const string&amp;);</code><br>要想声明一个指向该函数的指针，只需要将函数名替换成指针即可：  </p>
-<pre class="line-numbers language-c++"><code class="language-c++">bool (*pf)(const string&amp;, const string&amp;);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">bool (*pf)(const string&, const string&);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>使用函数指针</strong><br>当我们把函数名作为一个值使用的时候，该函数名自动转换成指针（指向该函数的）。<br>例如，可以这样给把函数地址赋值给指针：  </p>
 <pre class="line-numbers language-c++"><code class="language-c++">pf = lengthCompare; // pf指向名为lengthCompare的函数
-pf = &amp;lengthCompare; // 等价的赋值语句，取地址符是可选的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+pf = &lengthCompare; // 等价的赋值语句，取地址符是可选的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>可以直接对指向函数的指针调用该函数，无须解引用指针：  </p>
 <pre><code>bool b1 = pf("Hello", "Hi");
 bool b2 = (*pf)("Hello", "Hi"); // 等价调用
@@ -1184,7 +1188,7 @@ using PF=int(*)(int*，int)；//PF是指针类型<span aria-hidden="true" class=
 <p>其中我们使用类型别名将F定义成函数类型，将PF定义成指向函数类型的指针。必须时刻注意的是，和函数类型的形参不一样，返回类型不会自动地转换成指针。我们必须显式地将返回类型指定为指针：  </p>
 <pre><code>PF f1(int);//正确：PF是指向函数的指针，f1返回指向函数的指针
 F f1(int);//错误：F是函数类型，f1不能返回一个函数
-F *f1(int);//正确：显式地指定返回类型是指向函数的指针</code></pre><pre><code>出于完整性的考虑，有必要提醒读者我们还可以使用尾置返回类型的方式(参见6.3.3节，第206页)声明一个返回函数指针的函数：</code></pre><pre class="line-numbers language-c++"><code class="language-c++">auto fl(int)-&gt;int(*)(int*，int);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+F *f1(int);//正确：显式地指定返回类型是指向函数的指针</code></pre><pre><code>出于完整性的考虑，有必要提醒读者我们还可以使用尾置返回类型的方式(参见6.3.3节，第206页)声明一个返回函数指针的函数：</code></pre><pre class="line-numbers language-c++"><code class="language-c++">auto fl(int)->int(*)(int*，int);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>将auto和decltype用于函数指针类型</strong>  </p>
 <h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><p>类的基本思想是<strong>数据抽象</strong>(data abstraction)和<strong>封装</strong>(encapsulation)。</p>
 <p>数据抽象就是<strong>接口(interface)与实现(implementation)分离</strong>的技术。</p>
@@ -1246,15 +1250,15 @@ F *f1(int);//正确：显式地指定返回类型是指向函数的指针</code>
 <p>C++11中，使用这种语句来让编译器生成一个默认构造函数：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">SalesData() = default;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre><code>这种情况下，应当对内置类型的数据成员提供类内初始值，否则应当使用构造函数初始值列表形式的默认构造函数。</code></pre><p><strong>构造函数初始值列表</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">Sales_data(const std::string &amp;s):
+<pre class="line-numbers language-c++"><code class="language-c++">Sales_data(const std::string &s):
                         bookNo(s){}
-Sales_data(const std::string &amp;s,unsigned n,double p):
+Sales_data(const std::string &s,unsigned n,double p):
                         bookNo(s),units_sold(n),revenue(p*n){}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>参数列表后，函数体前的一部分内容叫构造函数初始值列表（constructor initialize list）。</p>
 <p>它负责为对象的成员变量赋初值。</p>
 <p>如果成员不在初始化列表中，它用类内初始值初始化（如果存在），否则执行默认初始化。</p>
 <pre><code>构造函数不应该轻易覆盖掉类内的初始值，除非新赋的值与原值不同。如果你不能使用类内初始值，则所有构造函数都应该显式地初始化每个内置类型的成员。</code></pre><p><strong>在类的外部定义构造函数</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">Sales data:：Sales data（std:：istream&amp;is）
+<pre class="line-numbers language-c++"><code class="language-c++">Sales data:：Sales data（std:：istream&is）
 {
 read（is，*this）；//read函数的作用是从is中读取一条交易信息然后
         //存入this对象中
@@ -1338,7 +1342,7 @@ public:
 private:
     int i;
     const int ci;
-    int &amp;i;
+    int &i;
 };
 ConstRef::ConstRef(int ii){
     i = ii;// 正确
@@ -1435,14 +1439,14 @@ ConstRef::ConstRef(int ii)::i(ii),ci(ii),ri(i){}<span aria-hidden="true" class="
 <p>读写一个IO对象会改变其状态，因此传递和返回的引用不能是const的。</p>
 <h3 id="条件状态"><a href="#条件状态" class="headerlink" title="条件状态"></a>条件状态</h3><p>IO类定义了一些函数和标志，可以帮助我们访问和操纵流的条件状态。见p279。<br>一个IO错误的例子：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int ival;
-cin &gt;&gt; ival;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+cin >> ival;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果试图在标准输入上键入Boo，读操作就会失败，cin进入错误状态。</p>
 <p>如果输入一个文件结束符标识，cin也会进入错误状态。</p>
 <p>一个流一旦发生错误，其上后续的IO操作都会失败。确定一个流对象的状态的最简单的方法是将它当作一个条件来使用：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">while (cin &gt;&gt; word)
+<pre class="line-numbers language-c++"><code class="language-c++">while (cin >> word)
     // ok<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="管理输出缓冲"><a href="#管理输出缓冲" class="headerlink" title="管理输出缓冲"></a>管理输出缓冲</h3><p>每个输出流都管理一个缓冲区，用来保存程序读写的数据。如果执行下面的代码：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">os &lt;&lt; "please enter a value: ";<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">os << "please enter a value: ";<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>文本串可能立即打印出来，但也有可能被操作系统保存在缓冲区中，随后再打印。这样可以带来很大的性能提升。</p>
 <p>导致缓冲区刷新的原因有：</p>
 <ul>
@@ -1465,8 +1469,8 @@ cin &gt;&gt; ival;<span aria-hidden="true" class="line-numbers-rows"><span></spa
 </ul>
 <p><strong>unitbuf操纵符</strong></p>
 <p>如果想在每次输出操作后都刷新缓冲区，我们可以使用unitbuf操纵符。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; unitbuf;    // 所有输出操作后都会立即刷新缓冲区
-cout &lt;&lt; nounitbuf;  // 回到正常的缓冲方式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << unitbuf;    // 所有输出操作后都会立即刷新缓冲区
+cout << nounitbuf;  // 回到正常的缓冲方式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre><code>如果程序崩溃，输出缓冲区不会刷新</code></pre><h2 id="文件输入输出"><a href="#文件输入输出" class="headerlink" title="文件输入输出"></a>文件输入输出</h2><p>除了继承自iostream类型的行为之外，fstream中定义的类型还增加了一些新的成员来管理与流关联的文件。见p283。</p>
 <h3 id="使用文件流对象"><a href="#使用文件流对象" class="headerlink" title="使用文件流对象"></a>使用文件流对象</h3><p>当想要读写一个文件时，可以定义一个文件流对象，并将对象与文件关联起来。</p>
 <p>每个文件流类都定义了一个名为open的成员函数，它完成一些系统相关的操作，来定位给定的文件，并视情况打开为读或写模式。</p>
@@ -1536,17 +1540,17 @@ ofstream app("file2", ofstream::app);    // 保留文件内容，写操作在文
 </ul>
 <pre class="line-numbers language-c++"><code class="language-c++">//每个容器有三个元素，用给定的初始化器进行初始化
 list<string> authors={"Milton"，"Shakespeare"，"Austen"};
-vector<const char*=""> articles={"a"，"an"，"the"};
+vector<const char*> articles={"a"，"an"，"the"};
 1ist<string>1ist2(authors);//正确：类型匹配
 deque<string>authList(authors);//错误：容器类型不匹配
 vector<string>words(articles);//错误：容器类型必须匹配
 //正确：可以将const char*元素转换为
-string forward_list<string> words(articles.begin()，articles.end());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></string></string></string></string></const></string></code></pre>
+string forward_list<string> words(articles.begin()，articles.end());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>列表初始化</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">list<const char="" *=""> articles = {"a","an","the"};<span aria-hidden="true" class="line-numbers-rows"><span></span></span></const></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">list<const char *> articles = {"a","an","the"};<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>标准库array具有固定大小</strong></p>
 <p>为了使用array类型，我们必须同时指定元素类型和大小，</p>
-<pre class="line-numbers language-c++"><code class="language-c++">array<int,10>::size_type i;//数组类型包括元素类型和大小；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></int,10></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">array<int,10>::size_type i;//数组类型包括元素类型和大小；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="赋值和swap"><a href="#赋值和swap" class="headerlink" title="赋值和swap"></a>赋值和swap</h3><p>赋值运算符将其左边容器中的全部元素替换为右边容器中的元素的拷贝。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">c1 = c2;
 ca = {a,b,c};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -1554,7 +1558,7 @@ ca = {a,b,c};<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <pre class="line-numbers language-c++"><code class="language-c++">array<int，10>al={0，1，2，3，4，5，6，7，8，9};
 array<int，10>a2={0};//所有元素值均为0
 al=a2;//替换a1中的元素
-a2={0};//错误：不能将一个花括号列表赋予数组<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></int，10></int，10></code></pre>
+a2={0};//错误：不能将一个花括号列表赋予数组<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>由于右边运算对象的大小可能与左边运算对象的大小不同，因此array类型不支持asign，也不允许用花括号包围的值列表进行赋值。</strong></p>
 <p><strong>使用assign(仅顺序容器)</strong></p>
 <p>赋值运算要求两边容器类型和元素类型相同。顺序容器（除了array）还定义了一个名为assign的成员，允许从一个相容的序列中赋值。</p>
@@ -1596,7 +1600,7 @@ c. insert(p, il);<span aria-hidden="true" class="line-numbers-rows"><span></span
 <p>如果容器是一个const对象，则返回值是const的引用。如果容器不是const的，则返回值是普通引用，我们可以用来改变元素的值：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">if(！c.empty()){
 C.front()=42;//将42赋予c中的第一个元素
-auto&amp;v=c.back();//获得指向最后一个元素的引用
+auto&v=c.back();//获得指向最后一个元素的引用
 v=1024;//改变c中的元素
 auto v2=c.back();//v2不是一个引用，它是c.back()的一个拷贝
 v2=0;//未改变c中的元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
@@ -1684,7 +1688,9 @@ auto pos2 = name.find_first_of(numbers);//寻找numbers字符串中任意字符�
 <p><strong>指定从哪里开始搜索</strong></p>
 <pre class="line-numbers language-c++"><code class="language-c++">string size_type pos = 0;
 while((pos=name.find_first_of(numbers,pos))!=string::npos){
-    cout&lt;&lt;"found number at index:"&lt;<pos<<" element="" is="" "<<name[pos]<<endl;="" ++pos;="" 移动到下一字符="" }<span="" aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></pos<<"></code></pre>
+    cout<<"found number at index:"<<pos<<" element is "<<name[pos]<<endl;
+    ++pos;//移动到下一字符
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="compare-函数"><a href="#compare-函数" class="headerlink" title="compare 函数"></a>compare 函数</h3><p>这是字符串比较函数，和C标准库的 strcmp 很相似。</p>
 <h3 id="数值转换"><a href="#数值转换" class="headerlink" title="数值转换"></a>数值转换</h3><p>标准库提供了数值转换的函数。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">to_string(val)
@@ -1741,7 +1747,7 @@ auto ret=copy(begin(a1)，end(al)，a2);//把a1的内容拷贝给a2<span aria-hi
 <p>我们可以向一个算法传递任何类别的可调用对象，对于一个对象或一个表达式，如果可以对其使用可调用运算符，则称它为可调用的。</p>
 <p>一个lambda表达式表示一个可调用的代码单元。可以将其理解为一个未命名的内联函数。一个lambda表达式具有一个返回类型、一个参数列表和一个函数体。但与函数不同，lambda可以定义在函数内部。</p>
 <p>一个lambda表达式具有如下形式：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">[capture list](parameter list) -&gt; return type { function body }<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">[capture list](parameter list) -> return type { function body }<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>其中，capture list是一个lambda所在函数中定义的局部变量的列表。</p>
 <p>可以忽略返回类型，这时会自动推断返回类型。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto func = [](){ return 42; };<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1755,7 +1761,7 @@ auto ret=copy(begin(a1)，end(al)，a2);//把a1的内容拷贝给a2<span aria-hi
 <p>如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">// sz为隐式捕获，值捕获方式
 wc = find_if(words.begin(), words.end(),
-             [=](const string &amp;s) { return s.size() &gt;= sz; } );<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+             [=](const string &s) { return s.size() >= sz; } );<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>详见lambda捕获列表，p352。</p>
 <p><strong>可变lambda</strong></p>
 <p>默认情况下，对于一个值拷贝的变量，lambda不会改变其值。如果希望改变，必须在参数列表后加上关键字mutable。</p>
@@ -1808,7 +1814,7 @@ liat<int>lst2,lst3;//空的list
 //copy 完成后lst2包含4 3 2 1
 copy(lst.begin(),lst.end(),front_inserter(lst2));
 //opy 完成后lst3包含1 2 3 4
-copy(lst.begin(),lst.end(),inserter(lst3,lst3.begin()));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></int></int></code></pre>
+copy(lst.begin(),lst.end(),inserter(lst3,lst3.begin()));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="iostream迭代器"><a href="#iostream迭代器" class="headerlink" title="iostream迭代器"></a>iostream迭代器</h3><p>istream_iterator读取输入流，ostream_iterator向一个输出流写数据。这些迭代器将它们对应的流当作一个特定类型的元素序列来处理。</p>
 <p>通过使用流迭代器，我们可以使用泛型算法从流对象读取数据以及向其写入数据。</p>
 <p>详细操作见p359。</p>
@@ -1906,60 +1912,60 @@ for(const auto &amp;a:word_count)
 //打印结果
     cout&lt;&lt;a.first&lt;&lt;"occurs"&lt;&lt;w.second&lt;&lt;((w.second&gt;1)?"times":"time"&lt;&lt;endl;</code></pre><p><strong>使用set</strong><br>可以使用set忽略我们想要忽略的单词，例如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">    // 统计每个单词在输入中出现的次数
-    map<string, size_t=""> word_count;    // string到size_t的空map
+    map<string, size_t> word_count;    // string到size_t的空map
     set<string> exclude = {"The", "the", "And", "and"};
 
     string word;
-    while (cin &gt;&gt; word) {
+    while (cin >> word) {
         // 只统计不在exclude中的单词
         if (exclude.find(word) == exclude.end())
             ++word_count[word];    // 提取word的计数器并将其加1
     }
 
-    for (const auto &amp;w : word_count) // 对map中的每个元素
+    for (const auto &w : word_count) // 对map中的每个元素
         // 打印结果
-        cout &lt;&lt; w.first &lt;&lt; " occurs time: " &lt;&lt; w.second &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></string></string,></code></pre>
+        cout << w.first << " occurs time: " << w.second << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="关联容器概述"><a href="#关联容器概述" class="headerlink" title="关联容器概述"></a>关联容器概述</h2><p>关联容器（有序的和无序的）都支持9.2节（第294页）中介绍的普通容器操作。关联容器不支持顺序容器的位置相关的操作，例如push_front。</p>
 <p>除了与顺序容器相同的操作之外，关联容器还支持一些顺序容器不支持的操作（见p388）和类型别名（见p381）。</p>
 <p>关联容器的迭代器都是双向的。</p>
-<h3 id="定义关联容器"><a href="#定义关联容器" class="headerlink" title="定义关联容器"></a>定义关联容器</h3><pre class="line-numbers language-c++"><code class="language-c++">map<string, size_t=""> word_count; // 空容器
+<h3 id="定义关联容器"><a href="#定义关联容器" class="headerlink" title="定义关联容器"></a>定义关联容器</h3><pre class="line-numbers language-c++"><code class="language-c++">map<string, size_t> word_count; // 空容器
 set<string> exclude = {"the", "but", "and"}; // 列表初始化
 
 // 三个元素；authors将姓映射为名
-map<string, string=""> authors = {
+map<string, string> authors = {
     {"Joyce", "James"},
     {"Austen", "Jane"},
     {"Dickens", "Charles"}
-};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></string,></string></string,></code></pre>
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>初始化multimap或multiset</strong></p>
 <p>一个map或set中的关键字必须是唯一的，即，对于一个给定的关键字，只能有一个元素的关键字等于它。</p>
 <p>multimap和multiset没有此限制，它们都允许多个元素具有相同的关键字（这些元素会相邻存储）。</p>
 <h3 id="关键字类型的要求"><a href="#关键字类型的要求" class="headerlink" title="关键字类型的要求"></a>关键字类型的要求</h3><p>对于有序容器，关键字类型必须定义元素比较的方法，默认情况下，标准库使用关键字类型的&lt;运算符来比较两个关键字。</p>
 <p><strong>使用关键字类型的比较函数</strong></p>
 <p>用来组织一个容器中元素的操作的类型也是该容器类型的一部分。为了指定使用自定义的操作，必须在定义关联容器类型时提供此操作的类型（比如一个函数指针类型）。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">bool compareIsbn(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+<pre class="line-numbers language-c++"><code class="language-c++">bool compareIsbn(const Sales_data &lhs, const Sales_data &rhs)
 {
-    return lhs.isbn() &lt; rhs.isbn();
+    return lhs.isbn() < rhs.isbn();
 }
 
-multiset<sales_data, decltype(compareisbn)*=""> bookstore(compareIsbn);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></sales_data,></code></pre>
+multiset<Sales_data, decltype(compareIsbn)*> bookstore(compareIsbn);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="pair类型"><a href="#pair类型" class="headerlink" title="pair类型"></a>pair类型</h3><p>pair类型定义在头文件utility中。</p>
 <p>一个pair保存两个数据成员，pair是一个用来生成特定类型的模板。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">pair<string, string=""> anon; // 保存两个string
-pair<string, vector<int="">&gt; line; // 保存string和vector<int><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></string,></string,></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">pair<string, string> anon; // 保存两个string
+pair<string, vector<int>> line; // 保存string和vector<int><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>pair的默认构造函数对数据成员进行值初始化。也可以为每个成员提供初始化器：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">pair<string, string=""> author{"James", "Joyce"};<span aria-hidden="true" class="line-numbers-rows"><span></span></span></string,></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">pair<string, string> author{"James", "Joyce"};<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>pair的数据成员是public的，两个成员分别是first，second。</p>
 <p><strong>创建pair对象的函数</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">pair<string, int="">
-process(vector<string> &amp;v)
+<pre class="line-numbers language-c++"><code class="language-c++">pair<string, int>
+process(vector<string> &v)
 {
     // 处理v
     if (!v.empty())
         return {v.back(), v.back().size()}; // 列表初始化
     else
-        return pair<string, int="">(); // 隐式构造返回值
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></string,></string></string,></code></pre>
+        return pair<string, int>(); // 隐式构造返回值
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="关联容器操作"><a href="#关联容器操作" class="headerlink" title="关联容器操作"></a>关联容器操作</h2><p>除了表9.2(第295页)中列出的类型，关联容器还定义了这些类型：</p>
 <ul>
 <li><p>key_type, 此容器类型的关键字类型</p>
@@ -1987,22 +1993,22 @@ while (map_it != word_count.cend()) {
 <p>对一个map进行insert操作时，必须记住元素类型是pair。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">word_count.insert({word, 1});
 word_count.insert(make_pair(word, 1));
-word_count.insert(pair<string, size_t="">(word, 1));
-word_count.insert(map<string, size_t="">::value_type(word, 1));
-word_count. insert(map<string, size_t="">:: value_type(word,1));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></string,></string,></string,></code></pre>
+word_count.insert(pair<string, size_t>(word, 1));
+word_count.insert(map<string, size_t>::value_type(word, 1));
+word_count. insert(map<string, size_t>:: value_type(word,1));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>检测insert的返回值</strong></p>
 <p>insert（或emplace）返回的值依赖于容器类型和参数。对于不包含重复关键字的容器，添加单一元素的insert和emplace版本返回一个pair，告诉我们插入操作是否成功。<strong>pair的first成员是一个迭代器</strong>，指向具有给定关键字的元素；second成员是一个boo1值，指出元素是插入成功还是已经存在于容器中。如果关键字已在容器中，则insert什么事情也不做，且返回值中的boo1部分为false。如果关键字不存在，元素被插入容器中，且boo1值为true。</p>
 <p><strong>展开递增语句</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">++ret.first-&gt;second;
-`++((ret.first)-&gt;second)`//等价的表达式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">++ret.first->second;
+`++((ret.first)->second)`//等价的表达式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>-. ret保存insert返回的值，是一个pair。<br>-. ret.first是pair的第一个成员，是一个map迭代器，指向具有给定关键字的元素。<br>-. ret.first-&gt;解引用此迭代器，提取map中的元素，元素也是一个pair。<br>-. ret.first-&gt;second map中元素的值部分。<br>-. ++ret.first-&gt;second 递增此值。</p>
 <p><strong>向multiset或multimap添加元素</strong></p>
 <p>由于一个multi容器中的关键字不必唯一，在这些类型上调用insert总会插入一个元素：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">multimap<string, string=""> authors;
+<pre class="line-numbers language-c++"><code class="language-c++">multimap<string, string> authors;
 // 插入第一个元素
 authors.insert({"Barth, John", "Sot-Weed Factor"});
 // 正确，添加第二个元素
-authors.insert({"Barth, John"}, "Lost in the Funhouse");<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></string,></code></pre>
+authors.insert({"Barth, John"}, "Lost in the Funhouse");<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>对允许重复关键字的容器，接受单个元素的insert操作返回一个指向新元素的迭代器。</p>
 <h3 id="删除元素-1"><a href="#删除元素-1" class="headerlink" title="删除元素"></a>删除元素</h3><p>关联容器定义了三个版本的erase：</p>
 <ul>
@@ -2065,7 +2071,7 @@ c.equal_bound(k);//返回一个迭代器pair<span aria-hidden="true" class="line
 </ul>
 <p>这些类型定义在memory头文件中。</p>
 <h3 id="shared-ptr类"><a href="#shared-ptr类" class="headerlink" title="shared_ptr类"></a>shared_ptr类</h3><p>智能指针也是模板，当创建一个智能指针时，必须提供指向的类型：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">shared_ptr<string> p1; // shared_ptr, 可以指向string<span aria-hidden="true" class="line-numbers-rows"><span></span></span></string></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">shared_ptr<string> p1; // shared_ptr, 可以指向string<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>默认初始化的智能指针中保存着一个空指针。</p>
 <p>解引用一个智能指针返回它指向的对象。如果在一个条件判断中使用智能指针，效果就是检测它是否为空：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">if (p1) *p1 = "hi";<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -2075,12 +2081,12 @@ c.equal_bound(k);//返回一个迭代器pair<span aria-hidden="true" class="line
 shared_ptr<int> p3 = make_shared<int>(42);
 
 // p6指向一个动态分配的空vector<string>
-auto p6 = make_shared<vector<string>&gt;();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></vector<string></string></int></int></code></pre>
+auto p6 = make_shared<vector<string>>();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>类似顺序容器的emplace成员，make_shared用其参数来构造给定类型的对象。如果我们不传递任何参数，对象就会进行值初始化。</p>
 <p><strong>shared_ptr的拷贝和赋值</strong></p>
 <p>每个shared_ptr都会记录有多少个其他shared_ptr指向相同的对象：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto p = make_shared<int>(42); // p指向的对象只有p一个引用者
-auto q(p); // p和q指向相同的对象，此对象有两个引用者<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></code></pre>
+auto q(p); // p和q指向相同的对象，此对象有两个引用者<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>可以认为每个shared_ptr都有一个关联的计数器，通常称其为<strong>引用计数</strong>(reference count)。无论何时我们拷贝一个shared_ptr，计数器都会递增。当我们给shared_ptr赋予一个新值或是shared_ptr被销毁时，计数器就会递减。</p>
 <p>一旦一个shared_ptr的计数器变为0，它就会自动释放自己所管理的对象。</p>
 <p>!!!note<br>    到底是由一个计数器还是其他数据结构来记录有多少指针共享对象，完全由标准库的具体实现决定。关键是智能指针类能记录有多少个shared_ptr指向相同的对象，并能在恰当的时候自动释放对象。</p>
@@ -2104,7 +2110,7 @@ auto q(p); // p和q指向相同的对象，此对象有两个引用者<span aria
 <p>可以使用直接初始化方式来初始化一个动态分配的对象：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int *pi = new int(1024);
 
-vector<int> *pv = new vector<int>{1, 2, 3};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></int></int></code></pre>
+vector<int> *pv = new vector<int>{1, 2, 3};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>动态分配的const对象</strong></p>
 <p>用new分配const对象是合法的：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">const int *pci = new const int(1024);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -2119,7 +2125,7 @@ int *p2 = new (nothrow) int; // 如果分配失败，new返回一个空指针<sp
 <p>为了防止内存耗尽，在动态内存使用完毕后，必须将其归还给系统。我们通过delete表达式（delete expression）来将动态内存归还给系统。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">delete p; // p必须指向一个动态分配的对象或是一个空指针<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>指针值和delete</strong><br>释放一块并非new分配的内存，或者将相同的指针值释放多次，其行为是未定义的。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">int i，*pil=&amp;i，*pi2=nullptr;
+<pre class="line-numbers language-c++"><code class="language-c++">int i，*pil=&i，*pi2=nullptr;
 double*pd = new double(33)，*pd2=pd;
 delete i；//错误：i不是一个指针
 delete pi1；//未定义；pi1指向一个局部变量
@@ -2139,19 +2145,19 @@ Foo* factory(T arg){
 1.忘记delete内存。忘记释放动态内存会导致人们常说的“内存泄漏”问题，因为这种内存永远不可能被归还给自由空间了。查找内存泄露错误是非常困难的，因为通常应用程序运行很长时间后，真正耗尽内存时，才能检测到这种错误。
 2.使用已经释放掉的对象。通过在释放内存后将指针置为空，有时可以检测出这种错误。
 3.同一块内存释放两次。当有两个指针指向相同的动态分配对象时，可能发生这种错误。如果对其中一个指针进行了delete操作，对象的内存就被归还给自由空间了。如果我们随后又delete第二个指针，自由空间就可能被破坏。相对于查找和修正这些错误来说，制造出这些错误要简单得多。</code></pre><h3 id="shared-ptr和new结合使用"><a href="#shared-ptr和new结合使用" class="headerlink" title="shared_ptr和new结合使用"></a>shared_ptr和new结合使用</h3><p>如果不初始化一个智能指针，它就会被初始化为一个空指针。还可以用new返回的指针来初始化智能指针：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">shared_ptr<int> p2(new int(42)); // p2指向一个值为42的int<span aria-hidden="true" class="line-numbers-rows"><span></span></span></int></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">shared_ptr<int> p2(new int(42)); // p2指向一个值为42的int<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>接受指针参数的智能指针构造函数是explicit的，因此必须使用直接初始化形式来初始化一个智能指针：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">shared_ptr<int> p1 = new int(1024); // 错误：必须使用直接初始化形式
-shared_ptr<int> p2(new int(1024));  // 正确：使用了直接初始化形式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></int></code></pre>
+shared_ptr<int> p2(new int(1024));  // 正确：使用了直接初始化形式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>p1的初始化隐式地要求编译器用一个new返回的int*来创建一个shared_ptr。由于我们不能进行内置指针到智能指针间的隐式转换，因此这条初始化语句是错误的。出于相同的原因，一个返回 shared_ptr的函数不能在其返回语句中隐式转换一个普通指针：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">shared ptr<int>clone(int p){
 return new int(p)；//错误：隐式转换为shared ptr<int>
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></int></int></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>我们必须将shared_ptr显式绑定到一个想要返回的指针上：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">shared ptr<int>clone(int p){
 //正确：显式地用int*创建 shared ptr<int>
 return shared_ptr<int>(new int(p))；
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></int></int></int></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>默认情况下，一个用来初始化智能指针的普通指针必须指向动态内存，因为智能指针默认使用delete释放它所关联的对象（可以提供自己的操作来替代delete）。</p>
 <p>更多关于智能指针使用的讨论见p412。</p>
 <h3 id="智能指针和异常"><a href="#智能指针和异常" class="headerlink" title="智能指针和异常"></a>智能指针和异常</h3><p>程序需要确保在异常发生后资源能被正确地释放。一个简单的确保资源被释放的方法是使用智能指针：</p>
@@ -2159,7 +2165,7 @@ return shared_ptr<int>(new int(p))；
 {
     shared_ptr<int> sp(new int(42)); // 分配一个对象
     // 这段代码抛出一个异常，且在f中未被捕获
-} // 函数结束时shared_ptr自动释放内存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></int></code></pre>
+} // 函数结束时shared_ptr自动释放内存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>无论是否发生了异常，局部对象都会被销毁，sp是指向这块内存的唯一指针，因此内存会被释放掉。</p>
 <p>如果使用了内置指针管理内存，且在new之后在对应的delete之前发生了异常，则内存不会被释放：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">void f()
@@ -2173,27 +2179,27 @@ return shared_ptr<int>(new int(p))；
 <p>这里给一个简单的定义删除器的例子，而具体的讨论见书本p416。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto deleter = [](int* p)
 {   
-    std::cout &lt;&lt; "delete data: " &lt;&lt; *p &lt;&lt; std::endl;
+    std::cout << "delete data: " << *p << std::endl;
     delete p;
 };  
 
-std::shared_ptr<int> p(new int(42), deleter);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></int></code></pre>
+std::shared_ptr<int> p(new int(42), deleter);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>智能指针可以提供对动态分配的内存安全而又方便的管理，但这建立在正确使用的前提下。为了正确使用智能指针，我们必须坚持一些基本规范：</p>
 <p>-. 不使用相同的内置指针值初始化（或reset）多个智能指针。<br>-. 不delete get（）返回的指针。<br>-. 不使用get（）初始化或reset另一个智能指针。<br>-. 如果你使用get（）返回的指针，记住当最后一个对应的智能指针销毁后，你的指针就变为无效了。<br>-. 如果你使用智能指针管理的资源不是new分配的内存，记住传递给它一个删除器（参见12.1.4节，第415页和12.1.5节，第419页）。</p>
 <h3 id="unique-ptr"><a href="#unique-ptr" class="headerlink" title="unique_ptr"></a>unique_ptr</h3><p>与shared_ptr不同，某个时刻只能有一个unique_ptr指向一个给定对象。当unique_ptr被销毁时，它所指向的对象也被销毁。</p>
 <p>与shared_ptr不同，没有类似make_shared的标准库函数返回一个unique_ptr。当我们定义一个unique_ptr时，需要将其绑定到一个new返回的指针上。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">unique_ptr<double> p1; // 可以指向一个double的unique_ptr
-unique_ptr<int> p2(new int(42)); // p2指向一个值为42的int<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></double></code></pre>
+unique_ptr<int> p2(new int(42)); // p2指向一个值为42的int<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>由于一个unique_ptr拥有它指向的对象，因此unique_ptr不支持普通的拷贝或赋值操作。</p>
 <p>更多有关unique_ptr操作的讨论见p418。</p>
 <h3 id="weak-ptr"><a href="#weak-ptr" class="headerlink" title="weak_ptr"></a>weak_ptr</h3><p>weak_ptr是一种不控制所指对象生存期的智能指针，它指向一个shared_ptr管理的对象。将一个weak_ptr绑定到一个shared_ptr不会改变shared_ptr的引用计数。一旦最后一个指向对象的shared_ptr被销毁，对象就会被释放。即使有weak_ptr指向对象，对象还是会被释放。</p>
 <p>当我们创建一个weak_ptr时，要用一个shared_ptr来初始化它：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto p = make_shared<int>(42);
-weak_ptr<int> wp(p); // wp若共享p；p的引用计数未改变<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></int></code></pre>
+weak_ptr<int> wp(p); // wp若共享p；p的引用计数未改变<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>由于对象可能不存在，我们不能使用weak_ptr直接访问对象，而必须调用lock。如果存在，lock返回一个指向共享对象的shared_ptr。否则返回一个空shared_ptr。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">if (shared_ptr<int> np = wp.lock()) { // 如果np不为空则条件成立
     // 在if中，np与p共享对象
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></int></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h2><p>C++语言和标准库提供了两种一次分配一个对象数组的方法：</p>
 <ul>
 <li><p>一种new表达式语法，可以分配并初始化一个对象数组。</p>
@@ -2225,7 +2231,7 @@ delete [] pa; // pa必须指向一个动态分配的数组或为空<span aria-hi
 <p>标准库提供了一个可以管理new分配的数组的unique_ptr版本：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">// up指向一个包含10个未初始化int的数组
 unique_ptr<int[]> up(new int[10]);
-up.release(); // 自动用delete[]销毁其指针<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></int[]></code></pre>
+up.release(); // 自动用delete[]销毁其指针<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>my note: 这里似乎有错误，release方法据p418介绍，是放弃对指针的控制权，返回指针。并不销毁原来指向的对象。另一个事例见：<a href="http://zh.cppreference.com/w/cpp/memory/unique_ptr/release" target="_blank" rel="noopener">http://zh.cppreference.com/w/cpp/memory/unique_ptr/release</a></p>
 </blockquote>
@@ -2242,7 +2248,7 @@ up.release(); // 自动用delete[]销毁其指针<span aria-hidden="true" class=
 <p>标准库allocator类定义在头文件memory中，它帮助我们将内存分配和对象构造分离开来。它分配的内存是原始的、未构造的。</p>
 <p>allocator也是模板，为了定义一个allocator对象，我们必须指明这个allocator可以分配的对象类型。当一个allocator对象分配内存时，它会根据给定对象类型来确定恰当的内存大小和对齐位置：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">allocator<string> alloc; // 可以分配string的allocator对象
-auto const p = alloc.allocate(n); // 分配n个未初始化的string<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></string></code></pre>
+auto const p = alloc.allocate(n); // 分配n个未初始化的string<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>allocator分配未构造的内存</strong></p>
 <p>allocator分配的内存是未构造的（unconstructed）。我们按需要在此内存中构造对象。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">auto q = p; // q指向最后构造元素之后的位置
@@ -2263,20 +2269,20 @@ alloc.construct(q++, "hi"); // *q为hi!<span aria-hidden="true" class="line-numb
 <pre class="line-numbers language-c++"><code class="language-c++">class Foo{
 public:
     Foo();//默认构造函数
-    Foo(const Foo&amp;);//拷贝构造函数
+    Foo(const Foo&);//拷贝构造函数
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>拷贝构造函数通常不应该是explicit的。</strong></p>
 <h3 id="合成拷贝构造函数"><a href="#合成拷贝构造函数" class="headerlink" title="合成拷贝构造函数"></a>合成拷贝构造函数</h3><p>对某些类来说，合成拷贝构造函数用来阻止我们拷贝该类类型的对象。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class Sales_data{
 public:
-    Sales_data(const Sales_data&amp;)//合成拷贝构造函数
+    Sales_data(const Sales_data&)//合成拷贝构造函数
 private:
     string BookNo;
     int units_sold = 0;
     double revenue = 0.0;
 };
 //与Sales_data的合成的拷贝构造函数等价
-Sales_data::Sales_data(const Sales_data &amp;orig):
+Sales_data::Sales_data(const Sales_data &orig):
                                                 BookNo(orig.BookNo),
                                                 units_sold(orig.units_sold),
                                                 revenue(orig.revenue)
@@ -2294,7 +2300,7 @@ Sales_data::Sales_data(const Sales_data &amp;orig):
 vector<int> v2=10;//错误，接受大小参数的构造函数是显式的
 void f(vector<int>);//f的参数进行拷贝初始化
 f(10);//错误；不能用一个显式的构造函数拷贝一个实参
-f(vector<int>(10));//正确，从一个int直接构造一个临时的vector<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></int></int></int></int></code></pre>
+f(vector<int>(10));//正确，从一个int直接构造一个临时的vector<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>编译器可以绕过构造函数</strong></p>
 <p>在拷贝初始化的过程中，编译器可以（但不是必须）跳过拷贝/移动构造函数，直接创建对象。例如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">string null_book="9-999-999999-9";//拷贝初始化
@@ -2303,14 +2309,14 @@ string null_book("9-999-999999-9");//编译器绕过了拷贝构造函数<span a
 <p>重载赋值运算符本质是函数，其名字由operator关键字后接表示要定义的运算符的符号组成。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class Foo{
 public:
-    Foo&amp; operator=(const Foo&amp;);//赋值运算符
+    Foo& operator=(const Foo&);//赋值运算符
 //...
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>为了与内置运算符保持一致性，赋值运算符通常返回一个指向其左侧运算对象的引用。</p>
 <p><strong>合成拷贝赋值运算符</strong></p>
 <p>如果一个类未定义自己的拷贝赋值运算符，编译器会为它合成一个。合成的版本会将右侧运算对象的每个非static成员赋予左侧运算符对象的对应成员。对于数组类型的成员，逐个赋值数组元素。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">Sales_data&amp;
-Sales_data::operator=(const Sales_data &amp;rhs){
+<pre class="line-numbers language-c++"><code class="language-c++">Sales_data&
+Sales_data::operator=(const Sales_data &rhs){
     BookNo = rhs.BookNo;
     units_sold = rhs.units_sold;
     revenue = rhs.revenue;
@@ -2344,7 +2350,7 @@ Sales_data::operator=(const Sales_data &amp;rhs){
 <p>我们可以通过将拷贝构造函数和拷贝赋值函数定义为删除的函数来阻止拷贝。删除的函数是这样的函数：我们虽然声明了它们，但不能以任何方式使用它们。在函数的参数列表后面加上=delete来指出我们希望将它定义为删除的：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">struct NoCopy{
 NoCopy()=default;
-NoCopy(const NoCopy&amp;)=delete;//阻止拷贝；
+NoCopy(const NoCopy&)=delete;//阻止拷贝；
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>还可以对任何函数指定=delete。</p>
 <p><strong>析构函数不能是删除的函数</strong></p>
@@ -2398,7 +2404,7 @@ v2.ps = temp;<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <p>swap函数的存在是为了优化代码。详细定义方法见书本。</p>
 <p><strong>在赋值运算符中使用swap</strong></p>
 <p>定义swap的类通常用swap来定义它们的赋值运算符。这些运算符使用了一种名为<strong>拷贝并交换（copy and swap）</strong>的技术。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">HasPtr &amp;HasPtr::operator=(HasPtr rhs)
+<pre class="line-numbers language-c++"><code class="language-c++">HasPtr &HasPtr::operator=(HasPtr rhs)
 {
     swap(*this, rhs);
     return *this;
@@ -2411,10 +2417,10 @@ v2.ps = temp;<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <p>使用移动而不是拷贝的另一个原因源于IO类或unique_ptr这样的类。这些类都包含不能被共享的资源（指针或IO缓冲）。因此，这些类的对象不能拷贝但可以移动。</p>
 <h3 id="右值引用"><a href="#右值引用" class="headerlink" title="右值引用"></a>右值引用</h3><p>为了支持移动操作，新标准引入了一种新的类型——<strong>右值引用（rvalue reference）</strong>。右值引用必须绑定到右值——一个将要销毁的对象。因此，我们可以自由地将一个右值引用的资源移动到另一个对象中。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int i = 42;
-int &amp;r = i;    // 正确：r引用i
-int &amp;&amp;rr = i;  // 错误：不能将一个右值引用绑定到一个左值上
-const int &amp;r3 = i*42;//正确：我们可以将一个const的引用绑定到一个右值上
-int &amp;&amp;r2 = i * 42; // 正确：将rr2绑定到乘法结果上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+int &r = i;    // 正确：r引用i
+int &&rr = i;  // 错误：不能将一个右值引用绑定到一个左值上
+const int &r3 = i*42;//正确：我们可以将一个const的引用绑定到一个右值上
+int &&r2 = i * 42; // 正确：将rr2绑定到乘法结果上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>左值持久，右值短暂</strong></p>
 <p>左值与右值的区别：左值有持久的状态，而右值要么是字面常量，要么是在表达式求值过程中创建的临时对象。</p>
 <p>由于右值引用只能绑定到临时对象，我们得知：</p>
@@ -2424,17 +2430,17 @@ int &amp;&amp;r2 = i * 42; // 正确：将rr2绑定到乘法结果上<span aria-
 <p><strong>变量是左值</strong></p>
 <p>变量可以看作只有一个运算对象而没有运算符的表达式。类似其他任何表达式，变量表达式也有左值/右值属性。变量表达式都是左值。</p>
 <p>因此，我们不能将一个右值引用绑定到一个右值引用类型的变量上：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">int &amp;&amp;rr1 = 42;     // 正确：字面常量是右值
-int &amp;&amp;rr2 = rr1;    // 错误：表达式rr1是左值！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">int &&rr1 = 42;     // 正确：字面常量是右值
+int &&rr2 = rr1;    // 错误：表达式rr1是左值！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre><code>变量是左值，因此我们不能将一个右值引用直接绑定到一个变量上，即使这个变量是右值引用类型也不行，</code></pre><p><strong>标准库move函数</strong></p>
 <p>虽然不能将一个右值引用直接绑定到一个左值上，但我们可以显式地将一个左值转换为对应的右值引用类型。方法是通过调用一个名为move的新标准库函数来获得绑定到左值上的右值引用。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">int &amp;&amp;rr3 = std::move(i); // OK<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">int &&rr3 = std::move(i); // OK<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>move调用告诉编译器：我们有一个左值，但我们希望像一个右值一样处理它。调用move就意味着承诺：除了对i赋值或销毁它外，我们将不再使用它。</p>
 <pre><code>我们可以销毁一个移后源对象，也可以赋予它新值，但不能使用一个移后源对象的值。
 使用move的代码应该是std::move而不是move。</code></pre><h3 id="移动构造函数和移动赋值运算符"><a href="#移动构造函数和移动赋值运算符" class="headerlink" title="移动构造函数和移动赋值运算符"></a>移动构造函数和移动赋值运算符</h3><p>移动的版本从给定对象“窃取”资源而不是拷贝资源。</p>
 <p>移动构造函数的第一个参数是该类型的一个右值引用。与拷贝构造函数一样，任何额外的参数都必须有默认实参。</p>
 <p>除了完成资源的移动，移动构造函数还必须确保移后源对象处于这样一个状态——销毁它是无害的。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">StrVec::StrVec(StrVec &amp;&amp;s) noexcpet // 移动构造函数不应抛出异常
+<pre class="line-numbers language-c++"><code class="language-c++">StrVec::StrVec(StrVec &&s) noexcpet // 移动构造函数不应抛出异常
  // 成员初始化器接管s中的资源
  : elements(s.elements), first_free(s.first_free), cap(s.cap)
 {
@@ -2446,16 +2452,16 @@ int &amp;&amp;rr2 = rr1;    // 错误：表达式rr1是左值！<span aria-hidde
 <p>通知的方法是在构造函数中指明noexcept。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class StrVec{
 public:
-    StrVec(StrVec&amp;&amp; ) noexcept;//移动构造函数 
+    StrVec(StrVec&& ) noexcept;//移动构造函数 
 };
-StrVec::StrVec(StrVec &amp;&amp;s) noexcept:/*成员初始化器*/
+StrVec::StrVec(StrVec &&s) noexcept:/*成员初始化器*/
 {/*构造函数体*/}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>移动赋值运算符</strong></p>
 <p>移动赋值运算符执行与析构函数和移动构造函数相同的工作。类似拷贝赋值运算符，移动赋值运算符必须正确处理自赋值：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">StrVec&amp; StrVec::operator=(StrVec &amp;&amp;rhs) noexcept
+<pre class="line-numbers language-c++"><code class="language-c++">StrVec& StrVec::operator=(StrVec &&rhs) noexcept
 {
     // 直接检测自赋值
-    if (this != &amp;rhs) {
+    if (this != &rhs) {
         free();    // 释放已有资源
         elements = rhs.elements; // 接管资源
         first_free = rhs.first_free;
@@ -2475,42 +2481,42 @@ StrVec::StrVec(StrVec &amp;&amp;s) noexcept:/*成员初始化器*/
 <p>如果一个类既有移动构造函数，也有拷贝构造函数，编译器使用普通的函数匹配规则来确定使用哪个构造函数。赋值操作的情况类似。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">StrVec v1, v2;
 v1 = v2;                    // v2是左值，使用拷贝赋值
-StrVec getVec(istream&amp;);    // getVec返回一个右值
+StrVec getVec(istream&);    // getVec返回一个右值
 v2 = getVec(cin);           // getVec(cin)是一个右值；使用移动赋值<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>更新三/五法则</strong></p>
 <p>所有五个拷贝控制成员应该看作一个整体：一般来说，如果一个类定义了任何一个拷贝操作，它就应该定义所有五个操作。这些类通常拥有一个资源，而拷贝成员必须拷贝此资源。一般来说，拷贝一个资源会导致一些额外开销。在这种拷贝并非必要的情况下，定义了移动构造函数和移动赋值运算符的类就可以避免此问题。</p>
 <h3 id="右值引用和成员函数"><a href="#右值引用和成员函数" class="headerlink" title="右值引用和成员函数"></a>右值引用和成员函数</h3><p>除了构造函数和赋值运算符之外，成员函数也可以提供拷贝和移动的版本：一个版本有一个右值引用参数，而另一个版本有一个const左值引用。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">void push_back(const X&amp;);   // 拷贝：绑定到任意类型的X
-void push_back(X&amp;&amp;);        // 移动：只能绑定到类型X的可修改的右值<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">void push_back(const X&);   // 拷贝：绑定到任意类型的X
+void push_back(X&&);        // 移动：只能绑定到类型X的可修改的右值<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>右值和左值引用成员函数</strong></p>
 <p>我们可以强制左侧运算对象是一个左值。</p>
 <p>我们指出this的左值/右值属性的方式与定义const成员函数相同，即，在参数列表后放置一个<strong>引用限定符（reference qualifier）</strong>。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class Foo {
 public:
-    Foo &amp;operator=(const Foo&amp;) &amp;;   // 只能向可修改的左值赋值
+    Foo &operator=(const Foo&) &;   // 只能向可修改的左值赋值
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>引用限定符可以是&amp;或&amp;&amp;，分别指出this可以指向一个左值或右值。如果存在const限定符，引用限定符必须跟随在const限定符之后。</p>
 <p><strong>重载和引用函数</strong></p>
 <p>我们可以综合引用限定符和const来区分一个成员函数的重载版本。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class Foo{
 public:
-    Foo sorted() &amp;&amp;;//可用于可改变的右值
-    Foo sorted() const &amp;;//可用于任何类型的Foo
+    Foo sorted() &&;//可用于可改变的右值
+    Foo sorted() const &;//可用于任何类型的Foo
 private:
     vector<int> data;
 };
 //本对象为右值，因此可以原址排序
-Foo Foo::sorted() &amp;&amp;
+Foo Foo::sorted() &&
 {
     sort(data.begin(),data.end());
     return *this;
 }
 //本对象是一个左值或者一个const，哪种情况我们都不能对其进行原址排序
-Foo Foo::sorted() const &amp;{
+Foo Foo::sorted() const &{
     Foo ret(*this);
     sort(ret.data.begin(),ret.data.end());
     return ret;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></int></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code>如果一个成员函数有引用限定符，则具有相同参数列表的所有版本都必须有引用限定符。</code></pre><h1 id="重载运算和类型转换"><a href="#重载运算和类型转换" class="headerlink" title="重载运算和类型转换"></a>重载运算和类型转换</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>重载运算符是具有特殊名字的函数：他们的名字由关键字operator和其后要定义的运算符号组成。重载运算符也包含返回类型，参数列表以及函数体。</p>
 <pre><code>当一个运算符是成员函数时，this绑定到左侧运算对象。成员运算符函数的（显式）参数数量比运算对象的数量少一个。</code></pre><p>对于一个运算符函数来是哦，它或者是类的成员，或者至少含有一个类型的参数：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">//错误，不能为int重定义内置的运算符
@@ -2545,25 +2551,25 @@ string u = "Hi" + s;//错误，等价于："Hi".operator+(s),hi的类型是const
 <p>第二个形参通常是一个常量的引用，该常量是我们要输出的类类型。</p>
 <p>为了与其他输出运算符保持一致，operator&lt;&lt;通常返回它的ostream形参。例如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class Salas_data{
-friend std::ostream&amp; operator&lt;&lt;(ostream&amp;, const Salas_data&amp;);
-friend std::ostream&amp; operator&gt;&gt;(istream&amp;, const Salas_data&amp;);
+friend std::ostream& operator<<(ostream&, const Salas_data&);
+friend std::ostream& operator>>(istream&, const Salas_data&);
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code>通常，输出运算符不应该打印换行符，主要负责输出打印的对象而非格式。</code></pre><p><strong>输出输出运算符必须是非成员函数</strong></p>
 <h3 id="重载输入运算符-gt-gt"><a href="#重载输入运算符-gt-gt" class="headerlink" title="重载输入运算符>>"></a>重载输入运算符&gt;&gt;</h3><p>通常情况下，输入运算符的第一个实参为将要读取的流的引用，第二个形参为将要读入到的（非常量）对象的引用。该运算符会返回某个流的引用。</p>
 <pre><code>输入运算符必须处理输入失败的问题，而输出运算符不需要。</code></pre><h2 id="算术和关系运算符"><a href="#算术和关系运算符" class="headerlink" title="算术和关系运算符"></a>算术和关系运算符</h2><p>通常我们把算术和关系运算符作为非成员函数以允许对左侧和右侧的运算对象进行转换。形参都是常量的引用。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">Salas_data operator+(const Salas_data &amp;lhs,const Salas_data &amp;rhs){
+<pre class="line-numbers language-c++"><code class="language-c++">Salas_data operator+(const Salas_data &lhs,const Salas_data &rhs){
     Salas_data sum = lhs;
     sum += rhs;
     return sum;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre><code>如果类同时定义了算术运算符和相关的复合赋值运算符，则通常情况下应该使用复合赋值运算符来实现。</code></pre><h3 id="相等运算符"><a href="#相等运算符" class="headerlink" title="相等运算符"></a>相等运算符</h3><pre class="line-numbers language-c++"><code class="language-c++">bool operator==(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+<pre><code>如果类同时定义了算术运算符和相关的复合赋值运算符，则通常情况下应该使用复合赋值运算符来实现。</code></pre><h3 id="相等运算符"><a href="#相等运算符" class="headerlink" title="相等运算符"></a>相等运算符</h3><pre class="line-numbers language-c++"><code class="language-c++">bool operator==(const Sales_data &lhs, const Sales_data &rhs)
 {
-    return lhs.isbn() == rhs.isbn() &amp;&amp;
-           lhs.units_sold == rhs.units_sold &amp;&amp;
+    return lhs.isbn() == rhs.isbn() &&
+           lhs.units_sold == rhs.units_sold &&
            lhs.revenue == rhs.revenue;
 }
 
-bool operator!=(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+bool operator!=(const Sales_data &lhs, const Sales_data &rhs)
 {
     return !(lhs == rhs);
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
@@ -2571,16 +2577,16 @@ bool operator!=(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
 <h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>之前介绍了拷贝赋值和移动赋值运算符，它们可以把类的一个对象赋值给类的另一个对象。此外，类还可以定义其他赋值运算符以使用别的类型作为右侧运算对象。</p>
 <p>比如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">vector<string> v;
-v = {"a", "b", "c"};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></string></code></pre>
+v = {"a", "b", "c"};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-c++"><code class="language-c++">class StrVec {
 public:
-    StrVec&amp; operator=(std::initializer_list<std::string>)
+    StrVec& operator=(std::initializer_list<std::string>)
     {
         // ...
     }
-};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></std::string></code></pre>
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code>赋值运算符必须为成员函数。</code></pre><h3 id="复合赋值运算符"><a href="#复合赋值运算符" class="headerlink" title="复合赋值运算符"></a>复合赋值运算符</h3><pre><code>赋值运算符必须为成员函数，复合赋值运算符通常情况下也应该这样做。这两类运算符都应该返回左侧运算对象的引用。</code></pre><pre class="line-numbers language-c++"><code class="language-c++">// 作为成员的二元运算符：左侧运算对象绑定到隐式的this指针
-Sales_data&amp; Sales_data::operator+=(const Sales_data &amp;rhs)
+Sales_data& Sales_data::operator+=(const Sales_data &rhs)
 {
     units_sold += rhs.units_sold;
     revenue += rhs.revenue;
@@ -2590,9 +2596,9 @@ Sales_data&amp; Sales_data::operator+=(const Sales_data &amp;rhs)
 <pre><code>下标运算符必须是成员函数。</code></pre><p>为了与下标的原始定义兼容，下标运算符通常以所访问元素的引用作为返回值，这样做的好处是下标可以出现在赋值运算符的任意一端。最好同时定义下标运算符的常量版本和非常量版本，当用作于一个常量对象时，下标运算符返回常量引用以确保我们不会给返回的对象赋值。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class StrVec {
 public:
-    std::string&amp; operator[](std::size_t n) { return elements[n]; }
+    std::string& operator[](std::size_t n) { return elements[n]; }
 
-    const std::string&amp; operator[](std::size_t n) const { return elements[n]; }
+    const std::string& operator[](std::size_t n) const { return elements[n]; }
 
 private:
     std::string *elements;    // 指向数组首元素的指针
@@ -2601,18 +2607,18 @@ private:
 <p>对于内置类型来说，递增和递减运算符既有前置版本也有后置版本。同样，我们也应该为类定义两个版本的递增和递减运算符。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class StrBlobPtr {
 public:
-    StrBlobPtr&amp; operator++();        // 前置运算符
-    StrBlobPtr&amp; operator--();
+    StrBlobPtr& operator++();        // 前置运算符
+    StrBlobPtr& operator--();
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-c++"><code class="language-c++">//前置版本：返回递增递减对象的引用
-StrBlobPtr&amp; StrBlobPtr::operator++(){
+StrBlobPtr& StrBlobPtr::operator++(){
 //如果curr已经指向了容器的尾后位置，则无法递增它
     check(curr, "increment past end of StrBlobPtr ")
     ++curr;    //将curr在当前状态下向前移动一个元素
     return *this;
 }
 
-StrBlobPtr&amp; StrBlobPtr::operator--(){
+StrBlobPtr& StrBlobPtr::operator--(){
     //如果curr是0，则继续递减它将产生一个无效下标
     --curr;        //将curr在当前状态下向后移动一个元素
     check(curr, "decrement past begin of StrBlobPtr");
@@ -2647,26 +2653,26 @@ p.operator++();//调用前置版本的operator++<span aria-hidden="true" class="
 <h2 id="成员访问运算符"><a href="#成员访问运算符" class="headerlink" title="成员访问运算符"></a>成员访问运算符</h2><p>在迭代器类及智能指针类中常常用到解引用运算符和箭头运算符。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">class StrBlobPtr {
 public:
-    std::string&amp; operator*() const;
+    std::string& operator*() const;
     {
         auto p = check(curr,"dereference past end");
         return (*p)[curr];
     }
-    std::string* operator-&gt;() const
+    std::string* operator->() const
     {
         // 将实际工作委托给解引用运算符
-        return &amp; this-&gt;operator*();
+        return & this->operator*();
     }
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>对箭头运算符返回值的限定</strong></p>
 <p>对于形如point-&gt;mem的表达式来说，point必须是指向类对象的指针或者是一个重载了operator-&gt;类的对象。根据point类型的不同，point-&gt;分别等价于：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">(*point).mem;        //point是一个内置的指针类型
-point.operator()-&gt;mem;        //point是一个类对象<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+point.operator()->mem;        //point是一个类对象<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>除此之外，代码都将发生错误。</p>
 <h2 id="函数调用运算符"><a href="#函数调用运算符" class="headerlink" title="函数调用运算符"></a>函数调用运算符</h2><p>如果类重载了函数调用运算符，则我们可以像使用函数一样使用该类的对象。因为这样的类同时也能存储状态，所以与普通函数相比它们更灵活。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">struct absInt {
     int operator()(int val) const {
-        return val &lt; 0 ? -val : val;
+        return val < 0 ? -val : val;
     }
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这个类只定义了一种操作：函数调用运算符，它负责接受一个int类型的实参，然后返回该实参的绝对值。</p>
@@ -2682,26 +2688,26 @@ int ui = absObj(i);        // 将i传递给absObj.operator()<span aria-hidden="t
 <h3 id="标准库定义的函数对象"><a href="#标准库定义的函数对象" class="headerlink" title="标准库定义的函数对象"></a>标准库定义的函数对象</h3><p>标准库定义了一组表示算术运算符、关系运算符和逻辑运算符的类，每个类分别定义了一个执行命名操作的调用运算符。例如，plus类定义了一个函数调用运算符用于对一对运算对象执行+操作。</p>
 <p>这些类都被定义成模板的形式，我们可以为其指定具体的应用类型，这里的类型即调用运算符的形参类型。例如，<code>plus&lt;string&gt;</code>令string的加法运算符作用于string对象。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">plus<int> intAdd;            // 可执行int加法的函数对象
-int sum = intAdd(10, 20);    // 使用intAdd::operator(int, int)求10和20的和<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></code></pre>
+int sum = intAdd(10, 20);    // 使用intAdd::operator(int, int)求10和20的和<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>在算法中使用标准库函数对象</strong></p>
 <p>表示运算符的函数对象类常用来替换算法中的默认运算符。比如，默认情况下排序算法使用operator&lt;将序列按照升序排列。如果要执行降序排列的话，我们可以传入一个greater类型的对象。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">// 传入一个临时的函数对象用于执行两个string对象的&gt;比较运算
-sort(svec.begin(), svec.end(), greater<string>());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></string></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">// 传入一个临时的函数对象用于执行两个string对象的>比较运算
+sort(svec.begin(), svec.end(), greater<string>());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="可调用对象与function"><a href="#可调用对象与function" class="headerlink" title="可调用对象与function"></a>可调用对象与function</h3><p>C++语言中有几种可调用的对象：函数、函数指针、lambda表达式、bind创建的对象以及重载了函数调用运算符的类。</p>
 <p>和其他对象一样，可调用对象也有类型。lambda有它自己唯一的未命名的类类型；函数及函数指针的类型由其返回值和实参类型决定。</p>
 <p>然而，两个不同类型的可调用对象却可能共享同一种调用形式（call signature）。调用形式指明了调用返回的类型以及传递给调用的实参类型。一种调用形式对应一个函数类型，例如：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">int(int, int)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>标准库function函数</strong></p>
 <p>function是一个模板，当创建一个具体的function类型时我们必须提供额外的信息，此额外信息是指该function类型能够表示的对象的调用形式：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">function<int(int, int)=""><span aria-hidden="true" class="line-numbers-rows"><span></span></span></int(int,></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">function<int(int, int)><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这里声明的function类型，表示接受两个int、返回一个int的可调用对象：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">function<int(int, int)=""> f1 = add;            // 函数指针
-function<int(int, int)=""> f2 = divide();        // 函数对象类的对象
-function<int(int, int)=""> f3 = [](int i, int j) { return i * j; };    // lambda
+<pre class="line-numbers language-c++"><code class="language-c++">function<int(int, int)> f1 = add;            // 函数指针
+function<int(int, int)> f2 = divide();        // 函数对象类的对象
+function<int(int, int)> f3 = [](int i, int j) { return i * j; };    // lambda
 
-cout &lt;&lt; f1(4, 2) &lt;&lt; endl;
-cout &lt;&lt; f2(4, 2) &lt;&lt; endl;
-cout &lt;&lt; f3(4, 2) &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></int(int,></int(int,></int(int,></code></pre>
+cout << f1(4, 2) << endl;
+cout << f2(4, 2) << endl;
+cout << f3(4, 2) << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="重载、类型转换与运算符"><a href="#重载、类型转换与运算符" class="headerlink" title="重载、类型转换与运算符"></a>重载、类型转换与运算符</h2><p>在263页中我们看到由一个实参调用的非显示构造函数定义了一种隐式的类型转换，这种构造函数将实参类型的对象转换成类类型。我们同样能定义对于类类型的类型转换，通过定义类型转换运算符可以做到这一点。</p>
 <p>转换构造函数和类型转换运算符共同定义了<strong>类类型转换（class-type conversions）</strong>。</p>
 <h3 id="类型转换运算符"><a href="#类型转换运算符" class="headerlink" title="类型转换运算符"></a>类型转换运算符</h3><p><strong>类型转换运算符（conversion  operator）</strong>是类的一种特殊成员函数，它负责将一个类类型的值转换成其他类型。其一般形式如下：</p>
@@ -2713,7 +2719,7 @@ cout &lt;&lt; f3(4, 2) &lt;&lt; endl;<span aria-hidden="true" class="line-number
 public:
     SmallInt(int i = 0) : val(i)
     {
-        if (i &lt; 0 || i &gt; 255)
+        if (i < 0 || i > 255)
             throw std::out_of_range("Bad SmallInt value");
     }
 
@@ -2723,8 +2729,8 @@ private:
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>SmallInt类的构造函数将算数类型的值转换成SmallInt对象，而类型转换运算符将SmallInt对象转换成int：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">SmallInt si;
-si = 4;            // 4 -&gt; SmallInt, 然后调用赋值运算符
-si + 3;            // si -&gt; int，然后执行整数的加法<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+si = 4;            // 4 -> SmallInt, 然后调用赋值运算符
+si + 3;            // si -> int，然后执行整数的加法<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>类型转换运算符可能产生意外结果</strong></p>
 <p>在实践中，类很少提供类型转换运算符。但有一种例外：对于类来说，定义向bool的类型转换还是比较普遍的现象，但这会遇到一个问题：因为bool是一种算术类型，所以类类型的对象转换成bool后就能被用在任何需要算术类型的上下文中（这不是期望的）。</p>
 <p><strong>显式的类型转换运算符</strong></p>
@@ -2737,7 +2743,7 @@ public:
 <p>编译器不会将一个显式的类型转换运算符用于隐式类型转换：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">SmallInt si = 3;            // 正确：SmallInt的构造函数不是显式的
 si + 3;                        // 错误：此处需要隐式的类型转换，但类的运算符是显式的
-static_cast<int>(si) + 3;    // 正确：显式地请求类型转换<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></int></code></pre>
+static_cast<int>(si) + 3;    // 正确：显式地请求类型转换<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>但，如果表达式被用作条件，则编译器会将显示的类型转换自动应用于它。</p>
 <pre><code>向bool的类型转换通常用在条件部分，因此operator bool一般定义成explicit的。</code></pre><h3 id="避免有二义性的类型转换"><a href="#避免有二义性的类型转换" class="headerlink" title="避免有二义性的类型转换"></a>避免有二义性的类型转换</h3><pre><code>通常情况下，不要为类定义相同的类型转换，也不要在类中定义两个及两个以上转换源或转换目标是算术类型的转换。</code></pre><p><strong>实参匹配和相同的类型转换</strong></p>
 <pre><code>我们无法通过强制类型转换来解决二义性问题，因为强制类型转换也面临二义性问题。</code></pre><h3 id="函数匹配和重载运算符"><a href="#函数匹配和重载运算符" class="headerlink" title="函数匹配和重载运算符"></a>函数匹配和重载运算符</h3><h1 id="面向对象程序设计"><a href="#面向对象程序设计" class="headerlink" title="面向对象程序设计"></a>面向对象程序设计</h1><p>面向对象程序设计基于三个基本概念：数据抽象、继承、动态绑定。</p>
@@ -2758,15 +2764,23 @@ public:
 <p><strong>动态绑定</strong></p>
 <p>通过使用动态绑定(dynamic binding)，我们能用用一段代码分别处理Quote和Bulk_Quote的对象。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">//计算并打印销售给定数量的某种书籍所得的费用
-double print_total(ostream &amp;os,const Quote &amp;item,size_t n){
+double print_total(ostream &os,const Quote &item,size_t n){
     //根据传入item的形参的对象调用Quote::net_price()
     //或者Bulk_Quote::net_price
     double ret = item.net_price(n);
-    os&lt;&lt;"ISBN: "&lt;<item.isbn()<< "#="" sold:="" "<<n<<="" "total="" due="" "<<ret<<endl;="" return="" ret;="" }="" basic的类型时quote,bulk的类型是bulk_quote="" print_total(cout,basic,20);="" 调用quote::net_price()="" print_total(cout,bulk,20);="" 调用bulk_quote::net_price()<span="" aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></item.isbn()<<></code></pre>
+    os<<"ISBN: "<<item.isbn()<< "# sold: "<<n<< "total due "<<ret<<endl;
+    return ret;
+}
+
+//basic的类型时Quote,bulk的类型是Bulk_Quote
+
+print_total(cout,basic,20);//调用Quote::net_price()
+
+print_total(cout,bulk,20);//调用Bulk_Quote::net_price()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code>当我们使用基类的引用或者指针调用一个虚函数时将发生动态绑定。</code></pre><h2 id="定义基类和派生类"><a href="#定义基类和派生类" class="headerlink" title="定义基类和派生类"></a>定义基类和派生类</h2><h3 id="定义基类"><a href="#定义基类" class="headerlink" title="定义基类"></a>定义基类</h3><pre class="line-numbers language-c++"><code class="language-c++">class Quote{
 public:
     Quote() = default;
-    Quote(std::string &amp;book,double sales_price):bookNo(book),price(sales_price){}
+    Quote(std::string &book,double sales_price):bookNo(book),price(sales_price){}
     std::string isbn() const {return bookNo;};
     virtual double net_price(size_t n) const {return n*price;}
     virtual ~Quote()
@@ -2787,11 +2801,11 @@ protected:
 <p>因为在派生类对象中含有基类对应的组成部分，所以我们能够把派生类的对象当成基类对象来使用，而且我们也能将基类的指针或引用绑定到派生类对象的基类部分上。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">Quote item;        //基类对象
 Bulk_Quote bulk;        //派生类对象
-Quote *p = &amp;item;        //p指向Quote对象
-p = &amp;bulk;        //p指向bulk的Quote部分
-Quote &amp;r = bulk;        r绑定到bulk的Quote部分<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Quote *p = &item;        //p指向Quote对象
+p = &bulk;        //p指向bulk的Quote部分
+Quote &r = bulk;        r绑定到bulk的Quote部分<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>派生类构造函数</strong></p>
-<pre class="line-numbers language-c++"><code class="language-c++">Bulk_Quote(const string &amp;book,double p,size_t qty,double disc):
+<pre class="line-numbers language-c++"><code class="language-c++">Bulk_Quote(const string &book,double p,size_t qty,double disc):
             Quote(book,p),min_qty(qty),discount(dis){}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre><code>首先初始化基类的部分，然后按照声明的顺序依次初始化派生类的成员。</code></pre><p><strong>派生类使用基类的成员</strong></p>
 <p>派生类可以使用基类的公有和保护成员。</p>
@@ -2813,10 +2827,10 @@ class Bulk_Quote:public Quote{...};<span aria-hidden="true" class="line-numbers-
 <p><strong>不存在从基类向派生类的隐式类型转换……</strong></p>
 <p>因为一个基类的对象可能是派生类对象的一部分，也可能不是，所以不存在从基类到派生类的自动类型转换。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">Quote base;
-Bulk_Quote* bulkp = &amp;base;        //错误：不能将基类转换成派生类
-Bulk_Quote&amp; bulkref = base;        //错误：不能将基类转换成派生类
+Bulk_Quote* bulkp = &base;        //错误：不能将基类转换成派生类
+Bulk_Quote& bulkref = base;        //错误：不能将基类转换成派生类
 Bulk_Quote bulk;
-Quote *itemp = &amp;bulk;        //正确：动态类型是Bulk_Quote
+Quote *itemp = &bulk;        //正确：动态类型是Bulk_Quote
 Bulk_Quote *bulkp = itemp;        //错误：不能将基类转换成派生类<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>……在对象之间不存在类型转换</strong></p>
 <pre><code>当我们用一个派生类为一个基类对象赋值时，只有该派生类对象中的基类部分会被拷贝，移动和赋值，它的派生类部分会被忽略掉。</code></pre><h2 id="虚函数"><a href="#虚函数" class="headerlink" title="虚函数"></a>虚函数</h2><p>我们必须为每个虚函数提供定义。</p>
@@ -2832,7 +2846,7 @@ Bulk_Quote *bulkp = itemp;        //错误：不能将基类转换成派生类<s
 <pre><code>如果虚函数使用默认实参，则基类和派生类中定义的默认实参最好一致。</code></pre><p><strong>回避虚函数机制</strong></p>
 <p>在某些情况下，我们希望对虚函数的调用不要动态绑定，而是强迫其执行虚函数的某个特定版本。使用作用域运算符可以实现这一目的：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">//强行调用基类中定义的函数版本而不管baseP的动态类型如何
-double undiscount = baseP-&gt;Quote::net_price(42);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+double undiscount = baseP->Quote::net_price(42);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="抽象基类"><a href="#抽象基类" class="headerlink" title="抽象基类"></a>抽象基类</h2><p><strong>纯虚函数</strong></p>
 <p>纯虚函数无需定义、我们在函数体的位置书写=0就可以将一个虚函数说明为纯虚函数。其中，=0只能出现在类内部的虚函数声明语句处。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">double net_price(size_t) const =0;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -2855,15 +2869,15 @@ protected:
 };
 
 class Sneaky:public Base{
-    friend void clobber(Sneaky&amp;);//能访问Sneaky::prot_mem
-    friend void clobber(Base&amp;);//不能访问Base::prot_mem
+    friend void clobber(Sneaky&);//能访问Sneaky::prot_mem
+    friend void clobber(Base&);//不能访问Base::prot_mem
     int j;
 };
 
 //正确，clobber能够访问Sneaky对象的private和protected成员
-void clobber(Snaaky &amp;s){s.j=s.prot_mem=0;}
+void clobber(Snaaky &s){s.j=s.prot_mem=0;}
 //错误;clobber不能访问Base的protected成员
-void clobber(base &amp;s){s.prot_mem=0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+void clobber(base &s){s.prot_mem=0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>公有，私有和受保护继承</strong></p>
 <p>某个类对其继承而来的成员的访问权限受到两个因素的影响：</p>
 <ol>
@@ -2969,7 +2983,7 @@ public:
 <pre class="line-numbers language-c++"><code class="language-c++">class B{
 public:
     B();
-    B(const B&amp;)=delete;
+    B(const B&)=delete;
 };
 
 class D:public B{
@@ -2984,10 +2998,10 @@ D d3(std::move(d));        //错误：隐式的使用D的被删除的拷贝构�
 <pre class="line-numbers language-c++"><code class="language-c++">class Quote{
 public:
     Quote()=default;//对成员依次进行默认初始化
-    Quote(const Quote&amp;)=default;//对成员依次拷贝
-    Quote(Quote&amp;&amp;)=default;//对成员依次拷贝
-    Quote&amp; operator=(const Quote&amp;)=default;//拷贝赋值
-    Quote&amp; operator=(Quote&amp;&amp;)=default;//拷贝赋值
+    Quote(const Quote&)=default;//对成员依次拷贝
+    Quote(Quote&&)=default;//对成员依次拷贝
+    Quote& operator=(const Quote&)=default;//拷贝赋值
+    Quote& operator=(Quote&&)=default;//拷贝赋值
     virtual ~Quote()=default;//析构函数
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="派生类的拷贝控制成员"><a href="#派生类的拷贝控制成员" class="headerlink" title="派生类的拷贝控制成员"></a>派生类的拷贝控制成员</h3><p>派生类的构造函数在其初始化阶段中不但要初始化派生类自己的成员，还负责初始化派生类对象的基类部分。因此，派生类的拷贝和移动构造函数在拷贝和移动自有成员的同时，也要移动和拷贝基类部分的成员。类似的，派生类赋值运算符也必须为其基类部分的成员赋值。</p>
@@ -3000,15 +3014,15 @@ public:
     //默认情况下，基类的默认构造函数初始化对象的基类部分
     //要想使用拷贝或移动构造函数，我们必须在构造函数初始列表中
     //显式的调用该构造函数
-    D(const D&amp;):Base(d)        //拷贝基类成员
+    D(const D&):Base(d)        //拷贝基类成员
             /*D的成员的初始值*/{ /* */}
-    D(D&amp;&amp; d):Base(std::move(d))        //移动基类成员
+    D(D&& d):Base(std::move(d))        //移动基类成员
             /*D的成员的初始值*/{ /* */}
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code>在默认情况下，其基类默认构造函数初始化派生类对象的基类部分。如果我们想拷贝或者移动基类部分，则必须在派生类的构造函数初始值列表中显式的使用基类的拷贝构造函数。</code></pre><p><strong>派生类赋值运算符</strong></p>
 <p>派生类的赋值运算符也必须显式地为其基类部分赋值。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">//Base::operator=(const Base&amp;)不会被自动调用
-D &amp;D::operator=(const D &amp;rhs){
+<pre class="line-numbers language-c++"><code class="language-c++">//Base::operator=(const Base&)不会被自动调用
+D &D::operator=(const D &rhs){
     Base::operator=(rhs);//为基类部分赋值
     //按照过去的方式为派生类的成员赋值
     //酌情处理自赋值及释放已有资源等情况
@@ -3028,16 +3042,16 @@ public:
 };<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>通常情况下，using声明语句只是令某个名字在当前作用域内可见。当当作用于构造函数时，using声明语句将令编译器产生代码。对于基类的每个构造函数，编译器都在派生类中生成一个形参列表完全相同的构造函数。</p>
 <p>在Bulk_quote类中，继承的构造函数等价于：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">Bulk_quote(const std::string &amp;book, double price, std::size_t qty, double disc) :
+<pre class="line-numbers language-c++"><code class="language-c++">Bulk_quote(const std::string &book, double price, std::size_t qty, double disc) :
     Disc_quote(book, price, qty, disc) {}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果派生类含有自己的数据成员，则这些成员将被默认初始化。</p>
 <p><strong>继承的构造函数的特点</strong></p>
 <p>一个构造函数的using声明不会改变该构造函数的访问级别。不能指定explicit和constexpr。</p>
 <h2 id="容器与继承"><a href="#容器与继承" class="headerlink" title="容器与继承"></a>容器与继承</h2><h1 id="模板和泛型编程"><a href="#模板和泛型编程" class="headerlink" title="模板和泛型编程"></a>模板和泛型编程</h1><h2 id="定义模板"><a href="#定义模板" class="headerlink" title="定义模板"></a>定义模板</h2><h3 id="函数模板"><a href="#函数模板" class="headerlink" title="函数模板"></a>函数模板</h3><p>一个函数模板就是一个公式，可用来生成针对特定类型的函数版本。compare的模板函数可以像这样：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">template<typename t="">
-int compare(const T &amp;v1,const T &amp;v2){
-    return  v1 &gt; v2 ? 1 : -1;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></typename></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">template<typename T>
+int compare(const T &v1,const T &v2){
+    return  v1 > v2 ? 1 : -1;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>模板定义以一个关键词template开始，后跟一个模板参数列表，这是一个逗号分隔或多个模板参数的列表，用&lt; 和 &gt; 包围起来。</p>
 <pre><code>在模板定义中，模板参数列表不能为空。</code></pre><p><strong>实例化参数模板</strong></p>
 <p>‘’’c++<br>cout&lt;&lt;compare(1,0)&lt;&lt;endl;//T为int<br>‘’’</p>
@@ -3047,8 +3061,8 @@ int compare(const T &amp;v1,const T &amp;v2){
 <p>一个非类型模板参数表示一个值而非一个类型。我们通过一个特定的类型名而非关键字class或者typename来指定非类型参数。</p>
 <pre><code>非类型模板参数的模板实参必须是常亮表达式。</code></pre><p><strong>inline和constexpr的函数模板</strong></p>
 <p>inline或者constexpr说明符放在参数列表之后，返回类型之前：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">template<typename t="">
-inline T min(const T &amp;a,const T &amp;b)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></typename></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">template<typename T>
+inline T min(const T &a,const T &b)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>编写类型无关的代码</strong></p>
 <p>编写泛型代码的两个重要的原则：</p>
 <ol>
@@ -3060,37 +3074,37 @@ inline T min(const T &amp;a,const T &amp;b)<span aria-hidden="true" class="line-
 <p><strong>模板编译</strong></p>
 <h2 id="类模板"><a href="#类模板" class="headerlink" title="类模板"></a>类模板</h2><h1 id="标准库特殊设施"><a href="#标准库特殊设施" class="headerlink" title="标准库特殊设施"></a>标准库特殊设施</h1><h2 id="tuple类型"><a href="#tuple类型" class="headerlink" title="tuple类型"></a>tuple类型</h2><p>tuple是类似pair的模板。每个pair的成员类型都不相同，但是每个pair都恰好有两个成员。不同tuple类型的成员类型也不相同，但是每个tuple可以有任意数量的成员。每个确定的tuple类型的成员数目是固定的，但一个tuple类型的成员数目可以与另一个tuple类型不同。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">tuple支持的操作
-tuple<t1,t2,...,tn> t;
-tuple<t1,t2,...,tn> t(v1,v2,v3,v4,...,vn);
+tuple<T1,T2,...,Tn> t;
+tuple<T1,T2,...,Tn> t(v1,v2,v3,v4,...,vn);
 make_tuple(v1,v2,...,vn);
 t1==t2;
 t1 relop t2;
-get<i>(t);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></i></t1,t2,...,tn></t1,t2,...,tn></code></pre><i>
+get<i>(t);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="定义和初始化tuple"><a href="#定义和初始化tuple" class="headerlink" title="定义和初始化tuple"></a>定义和初始化tuple</h3><p>当我们定义一个tuple时，需要指出每个成员的类型：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">tuple<size_t,size_t,size_t> threeD;//三个成员都设置为0
-tuple<string,vector<double>,int,list<int>) someVal("contents",{3.14,2.718},42,{0,1,2,3,4,5})<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></int></string,vector<double></size_t,size_t,size_t></code></pre>
+tuple<string,vector<double>,int,list<int>) someVal("contents",{3.14,2.718},42,{0,1,2,3,4,5})<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>访问tuple的成员</strong></p>
 <p>要访问一个tuple的成员，就要使用一个名为get的标准函数模板。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">auto book = get&lt;0&gt;(item);//返回item成员的第一个成员
-auto cnt = get&lt;1&gt;(item);//返回item成员的第二个成员<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">auto book = get<0>(item);//返回item成员的第一个成员
+auto cnt = get<1>(item);//返回item成员的第二个成员<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果不知道一个tuple准确的类型细节信息，可以使用辅助类模板来查询tuple成员的类型和数量：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">typedef decltype(item) trans;//trans是item的类型
 //返回item类型对象中成员的数量
 size_t sz = tuple_size<trans>::value;//返回3
 //cnt类型与item中第二个成员相同
-tuple_element&lt;1,trans&gt;::type cnt = get&lt;1&gt;(item);//cnt为int型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></trans></code></pre>
+tuple_element<1,trans>::type cnt = get<1>(item);//cnt为int型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="使用tuple返回多个值"><a href="#使用tuple返回多个值" class="headerlink" title="使用tuple返回多个值"></a>使用tuple返回多个值</h3><h2 id="bitset类型"><a href="#bitset类型" class="headerlink" title="bitset类型"></a>bitset类型</h2><p>标准库定义了bitset类，使得位运算的使用更为容易，并且能够处理超过最长整型类型大小的位集合。bitset类定义在头文件bitset中。</p>
 <h3 id="定义和初始化bitset"><a href="#定义和初始化bitset" class="headerlink" title="定义和初始化bitset"></a>定义和初始化bitset</h3><p>bitset类是一个类模板，它类似array类，具有固定的大小。当我们定义一个bitset时，需要声明它包含多少个二进制位。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">bitset&lt;32&gt; bitvec(1U);    // 32位；低位为1，其他位为0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">bitset<32> bitvec(1U);    // 32位；低位为1，其他位为0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>二进制位的位置是从0开始编号的，因此，bitvec包含编号从0到31的32个二进制位。编号从0开始的二进制位被称为低位（low-order），编号到31结束的二进制位被称为高位（high-order）。</p>
 <p><strong>使用unsigned值初始化bitset</strong></p>
 <p>当我们使用一个整型值来初始化bitset时，此值将被转换为unsigned long long类型并被当作位模式来处理。bitset中的二进制位将是此模式的一个副本。如果bitset的大小大于unsigned long long的位数，则剩余高位被置为0。如果小于，则只使用给定值中的低位，超出bitset大小的高位被丢弃。</p>
 <p><strong>从一个string初始化bitset</strong></p>
 <p>我们可以从一个string或一个字符数组指针来初始化bitset。两种情况下，字符都直接表示位模式。当我们使用字符串表示数时，字符串中下标最小的字符对应高位：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">bitset&lt;32&gt; bitvec4("1100");    // 2、3两位为1，剩余两位为0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">bitset<32> bitvec4("1100");    // 2、3两位为1，剩余两位为0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果string包含的字符数比bitset少，则bitset的高位被置为0。</p>
 <pre><code>string的下标编号习惯于bitset恰好相反：string中下标最大的字符（最右）用来初始化bitset中的低位。</code></pre><h3 id="bitset操作"><a href="#bitset操作" class="headerlink" title="bitset操作"></a>bitset操作</h3><p>bitset操作定义了多种检测或设置一个或多个二进制位的方法。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">bitset&lt;32&gt; bitvec(1U);
+<pre class="line-numbers language-c++"><code class="language-c++">bitset<32> bitvec(1U);
 bool is_set = bitvec.any();            // true，因为有1位置位
 bool is_not_set = bitvec.none();    // false，因为有1位置位了
 bool all_set = bitvec.all();        // false，因为只有1位置位了
@@ -3111,12 +3125,12 @@ bitvec[31] = bitvec[0];                // 将最后一位设置为与第一位�
 <p><strong>提取bitset的值</strong></p>
 <p>to_ulong和to_ullong操作都返回一个值，保存了与bitset对象相同的位模式，只有当bitset的大小小于等于对应的大小时，我们才能使用这两个操作，否则将会抛出overflow_error异常。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">unsigned long ulong = bitvec3.to_ulong();
-cout &lt;&lt; "ulong = " &lt;&lt; ulong &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+cout << "ulong = " << ulong << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>bitset的IO运算符</strong></p>
 <p>输入运算符从一个输入流读取字符，保存到一个临时的string对象中。直到读取的字符数达到对应bitset的大小时，或是遇到不是1或0的字符时，或是遇到文件尾或输入错误时，读取过程才停止。随即用临时string对象来初始化bitset。如果读取的字符数小于bitset的大小，高位被置为0。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">bitset&lt;16&gt; bits;
-cin &gt;&gt; bits;        // 从cin读取最多16个0或1
-cout &lt;&lt; "bits: " &lt;&lt; bits &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">bitset<16> bits;
+cin >> bits;        // 从cin读取最多16个0或1
+cout << "bits: " << bits << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p>正则表达式是一种描述字符序列的方法，是一种及其强大的计算工具。它定义在头文件regex中，它包含多个组件：</p>
 <table>
 <thead>
@@ -3178,14 +3192,14 @@ cout &lt;&lt; "bits: " &lt;&lt; bits &lt;&lt; endl;<span aria-hidden="true" clas
 <p>!!!note<br>    C++程序不应该使用库函数rand，而应使用default_random_engine类和恰当的分布类对象。</p>
 <h3 id="随机数引擎和分布"><a href="#随机数引擎和分布" class="headerlink" title="随机数引擎和分布"></a>随机数引擎和分布</h3><p>随机数引擎是函数对象类，它们定义了一个调用运算符，该运算符不接受参数并返回一个随机unsigned整数。我们可以通过调用一个随机数引擎对象来生成原始随机数。</p>
 <pre class="line-numbers language-c++"><code class="language-c++">default_random_engine e;
-cout &lt;&lt; e() &lt;&lt; endl;        // 生成一个随机无符号数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+cout << e() << endl;        // 生成一个随机无符号数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>标准库定义了多个随机数引擎类，区别在于性能和随机质量不同。</p>
 <p><strong>分布类型和引擎</strong></p>
 <p>为了得到一个指定范围内的数，我们使用一个分布类型的对象：</p>
 <pre class="line-numbers language-c++"><code class="language-c++">// 生成0到9之间（包含）均匀分布的随机数
 uniform_int_distribution<unsigned> u(0, 9);
 default_random_engine e;
-cout &lt;&lt; u(e) &lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></unsigned></code></pre>
+cout << u(e) << endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>分布类型也是函数对象类。分布类型定义了一个调用运算符，它接受一个随机数引擎作为参数。分布对象使用它的引擎参数生成随机数，并将其映射到指定的分布。</p>
 <pre><code>当我们说随机数发生器时，是指分布对象和引擎对象的组合。</code></pre><p><strong>引擎生成一个数值序列</strong></p>
 <p>随机数发生器有一个特性经常会使新手迷惑：即使生成的数看起来是随机的，但对于一个给定的发生器，每次运行程序它都会返回相同的数值序列。一个函数如果定义了局部的随机数发生器，应该将其（包括引擎和分布对象）定义为static的。否则，每次调用函数都会生成相同的序列。</p>
@@ -3206,15 +3220,15 @@ default_random_engine e2(42);    // 使用给定的种子值<span aria-hidden="t
 <p>!!!warning<br>    当操纵符改变流的格式状态时，通常改变后的状态对所有后续IO都生效。</p>
 <p><strong>控制布尔值的格式</strong></p>
 <p>默认情况下，bool值打印为1或0，通过对流使用boolalpha操纵符来修改原有格式：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; boolalpha &lt;&lt; true &lt;&lt; " " &lt;&lt; false &lt;&lt; endl; // 输出：true false<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << boolalpha << true << " " << false << endl; // 输出：true false<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>一旦向cout“写入”了boolalpha，我们就改变了cout打印bool值的方式。后续打印bool值的操作都会打印true或false，为了取消格式的改变，noboolalpha：</p>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; noboolalpha;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << noboolalpha;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>指定整型值的进制</strong></p>
 <p>默认情况下，整型值的输入输出使用十进制。我们可以使用操纵符hex、oct、dec将其改为十六进制、八进制或是改回十进制。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; "default: " &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "octal: " &lt;&lt; oct &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "hex: " &lt;&lt; hex &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "decimal: " &lt;&lt; dec &lt;&lt; 20 &lt;&lt; endl; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << "default: " << 20 << endl;
+cout << "octal: " << oct << 20 << endl;
+cout << "hex: " << hex << 20 << endl;
+cout << "decimal: " << dec << 20 << endl; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>在输出中指出进制</strong></p>
 <p>当对流应用showbase操纵符时，会在输出结果中显示进制：</p>
 <ul>
@@ -3225,16 +3239,16 @@ cout &lt;&lt; "decimal: " &lt;&lt; dec &lt;&lt; 20 &lt;&lt; endl; <span aria-hid
 <li><p>无前导字符串表示十进制。</p>
 </li>
 </ul>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; showbase;    // 打印整型值时显示进制
-cout &lt;&lt; "default: " &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "octal: " &lt;&lt; oct &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "hex: " &lt;&lt; hex &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; "decimal: " &lt;&lt; dec &lt;&lt; 20 &lt;&lt; endl;
-cout &lt;&lt; noshowbase; // 恢复流状态 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << showbase;    // 打印整型值时显示进制
+cout << "default: " << 20 << endl;
+cout << "octal: " << oct << 20 << endl;
+cout << "hex: " << hex << 20 << endl;
+cout << "decimal: " << dec << 20 << endl;
+cout << noshowbase; // 恢复流状态 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>指定打印精度</strong></p>
 <p>setprecision操纵符接受一个参数，用来设置精度。它定义在头文件iomanip中。</p>
-<pre class="line-numbers language-c++"><code class="language-c++">cout &lt;&lt; setprecision(3);
-cout &lt;&lt; sqrt(2.0) &lt;&lt; endl;    // 输出：1.41<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">cout << setprecision(3);
+cout << sqrt(2.0) << endl;    // 输出：1.41<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>更多操纵符见p669。</p>
 <h3 id="未格式化的输入-输出操作"><a href="#未格式化的输入-输出操作" class="headerlink" title="未格式化的输入/输出操作"></a>未格式化的输入/输出操作</h3><p>标准库提供了一组低层操作，支持未格式化IO（unformatted IO）。这组操作允许我们将一个流当作一个无解释的字节序列来处理。</p>
 <p><strong>单字节操作</strong></p>
@@ -3304,7 +3318,7 @@ while (cin.get(ch))
 </tr>
 </tbody></table>
 <p>从逻辑上讲，我们只能对istream使用g版本，对ostream使用p版本。iostream则可以使用g版本又可以使用p版本。</p>
-</i><script>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -4003,7 +4017,7 @@ while (cin.get(ch))
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">111.3k</span>&nbsp;字
+                class="white-color">93.3k</span>&nbsp;字
             
             
             
@@ -4235,11 +4249,6 @@ $(function () {
     </script>
     
 
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
     
 
     
